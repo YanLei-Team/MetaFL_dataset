@@ -3,7 +3,6 @@ build-debug:
 build-release:
 	clang -O3 sed.c -o sed.exe
 generate-gcov:
-	llvm-cov gcov sed.c
+	llvm-cov gcov *.gcno
 clean:
-	rm -f *.o *.exe *.gcda *.gcno *.gcov
-
+	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov

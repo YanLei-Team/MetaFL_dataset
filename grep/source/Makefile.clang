@@ -3,6 +3,6 @@ build-debug:
 build-release:
 	clang -I. -o grep.exe -O3 grep.c
 generate-gcov:
-	llvm-cov gcov grep.c
+	llvm-cov gcov *.gcno
 clean:
-	rm -f *.o *.exe
+	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov

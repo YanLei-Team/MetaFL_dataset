@@ -3,7 +3,6 @@ build-release:
 build-debug:
 	clang++ mid.cpp --coverage -o mid.exe
 generate-gcov:
-	llvm-cov gcov mid.cpp
+	llvm-cov gcov *.gcno
 clean:
 	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov
-

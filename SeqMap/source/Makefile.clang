@@ -3,6 +3,6 @@ build-debug:
 build-release:
 	clang++ -o seqmap.exe -O3 seqmap.cpp
 generate-gcov:
-	llvm-cov gcov seqmap.cpp
+	llvm-cov gcov *.gcno
 clean:
-	rm -f *.o *.exe
+	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov

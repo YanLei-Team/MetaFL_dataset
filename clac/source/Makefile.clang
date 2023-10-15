@@ -3,6 +3,6 @@ build-release:
 build-debug:
 	clang clac.c linenoise.c sds.c -lm --coverage -o clac.exe
 generate-gcov:
-	llvm-cov gcov clac.c
+	llvm-cov gcov *.gcno
 clean:
 	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov

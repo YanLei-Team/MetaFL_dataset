@@ -3,6 +3,6 @@ build-debug:
 build-release:
 	clang++ -o ShortestPath.exe -O3 DijkstraShortestPathAlg.cpp MainP.cpp
 generate-gcov:
-	llvm-cov gcov DijkstraShortestPathAlg.cpp
+	llvm-cov gcov *.gcno
 clean:
-	rm -f *.o *.exe *.gcov *.gcda *.gcno *.gch
+	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov
