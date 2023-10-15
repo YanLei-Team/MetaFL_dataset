@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:13:04.277519
++++ /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:14:25.056762
+@@ -354,7 +354,7 @@
+     BaseVertex* cur_vertex_pt = *pos; //m_quCandidateVertices.top();
+     m_quCandidateVertices.erase(pos);
+ 
+-    if (cur_vertex_pt == end_vertex) break;
++    if (cur_vertex_pt >= end_vertex) break;
+ 
+     m_stDeterminedVertices.insert(cur_vertex_pt->getID());
+ 

@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:41:01.329458
++++ /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:45:09.935980
+@@ -68,7 +68,7 @@
+ 	struct node *next;
+ } node;
+ 
+-static stack stacks[] = {{{}, 0}, {{}, 0}};
++static stack stacks[] = {{{}, -1}, {{}, 0}};
+ static stack *s0 = &stacks[0];
+ static stack *s1 = &stacks[1];
+ static node *head = NULL;

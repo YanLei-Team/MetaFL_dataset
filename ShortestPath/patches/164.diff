@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:13:04.277519
++++ /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:14:25.070692
+@@ -404,7 +404,7 @@
+       multiset<BaseVertex*, WeightLess<BaseVertex> >::const_iterator pos = m_quCandidateVertices.begin();
+       for(; pos != m_quCandidateVertices.end(); ++pos)
+       {
+-        if ((*pos)->getID() == (*cur_neighbor_pos)->getID())
++        if ((*pos)->getID() < (*cur_neighbor_pos)->getID())
+         {
+           break;
+         }

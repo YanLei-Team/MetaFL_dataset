@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.573748
+@@ -208,7 +208,7 @@
+ 
+ static enum TOKEN_TYPE getType(const char ch)
+ {
+-    if ((ch >= '0' && ch <= '9') || ch == '.') {
++    if ((ch >= '0' && ch < '9') || ch == '.') {
+         return T_Operand;
+     }
+ 

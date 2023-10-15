@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:14.571801
+@@ -4435,7 +4435,7 @@
+      char' -- the range is inclusive, so if `range_end' == 0xff
+      (assuming 8-bit characters), we would otherwise go into an infinite
+      loop, since all characters <= 0xff.  */
+-  for (this_char = range_start; this_char <= range_end; this_char++)
++  for (this_char = range_start; this_char == range_end; this_char++)
+     {
+       SET_LIST_BIT (TRANSLATE (this_char));
+     }

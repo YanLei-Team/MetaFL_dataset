@@ -1,0 +1,8 @@
+build-debug:
+	clang -I. -o grep.exe -fprofile-arcs -ftest-coverage grep.c
+build-release:
+	clang -I. -o grep.exe -O3 grep.c
+generate-gcov:
+	llvm-cov gcov grep.c
+clean:
+	rm -f *.o *.exe

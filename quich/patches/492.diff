@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.592743
+@@ -253,7 +253,7 @@
+             continue;
+         }
+ 
+-        if (str[i] != '.' && (str[i] < '0' || str[i] > '9')) {
++        if (str[i] > '.' && (str[i] < '0' || str[i] > '9')) {
+             return false;
+         }
+     }

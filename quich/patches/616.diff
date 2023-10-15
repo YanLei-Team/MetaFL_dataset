@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.636428
+@@ -396,7 +396,7 @@
+         current_type = T_Operand;
+         free(current_token);
+         current_token = malloc_(2);
+-        current_token[0] = str[i];
++        current_token[0] >>= str[i];
+         current_token[1] = '\0';
+ 
+         return;

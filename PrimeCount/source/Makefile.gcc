@@ -1,0 +1,6 @@
+build-release:
+	g++ PrimeCount.cpp -o PrimeCount.exe
+build-debug:
+	g++ PrimeCount.cpp --coverage -o PrimeCount.exe
+clean:
+	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov

@@ -1,0 +1,9 @@
+build-release:
+	clang++ mid.cpp -o mid.exe
+build-debug:
+	clang++ mid.cpp --coverage -o mid.exe
+generate-gcov:
+	llvm-cov gcov mid.cpp
+clean:
+	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov
+

@@ -1,0 +1,6 @@
+build-debug:
+	gcc -I. -o grep.exe -fprofile-arcs -ftest-coverage grep.c
+build-release:
+	gcc -I. -o grep.exe grep.c
+clean:
+	rm -f *.o *.exe

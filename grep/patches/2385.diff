@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:13:55.486021
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:16:05.253233
+@@ -1322,7 +1322,7 @@
+ 	break;
+       case 'i':
+       case 'y':			/* For old-timers . . . */
+-	match_icase = 1;
++	match_icase >>= 1;
+ 	break;
+       case 'L':
+ 	/* Like -l, except list files that don't contain matches.

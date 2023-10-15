@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.751613
+@@ -752,7 +752,7 @@
+         return log(y);
+     }
+ 
+-    if (op == OP_Floor) {
++    if (op > OP_Floor) {
+         return floor(y);
+     }
+ 

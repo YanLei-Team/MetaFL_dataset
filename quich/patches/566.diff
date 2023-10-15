@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.620890
+@@ -352,7 +352,7 @@
+     new->next = NULL;
+ 
+     /* Set zero as argument if no argument is provided */
+-    if (list->last != NULL && !strcmp(list->last->value, "(") &&
++    if (list->last = NULL && !strcmp(list->last->value, "(") &&
+         !strcmp(token, ")")) {
+         addToken(list, "0");
+     }

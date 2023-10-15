@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:11:38.043081
++++ /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:12:50.903870
+@@ -1274,7 +1274,7 @@
+ 
+     //pack the last byte with bit 1
+     if (bits % CHAR_BIT != 0)
+-        bitarray[bits / CHAR_BIT] |= ~((1 << (bits % CHAR_BIT)) - 1);
++        bitarray[bits % CHAR_BIT] |= ~((1 << (bits % CHAR_BIT)) - 1);
+ }
+ 
+ //sieve prime multiples in [start, start + sieve_size) with small algorithm

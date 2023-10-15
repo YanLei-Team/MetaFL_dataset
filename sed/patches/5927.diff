@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:14.569079
+@@ -4420,7 +4420,7 @@
+ 
+      We also want to fetch the endpoints without translating them; the
+      appropriate translation is done in the bit-setting loop below.  */
+-  range_start = ((unsigned char *) p)[-2];
++  range_start = ((unsigned char *) p)[-3];
+   range_end   = ((unsigned char *) p)[0];
+ 
+   /* Have to increment the pointer into the pattern string, so the

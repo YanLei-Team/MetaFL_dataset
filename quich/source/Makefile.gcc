@@ -1,0 +1,6 @@
+build-release:
+	gcc quich.c -lm -o quich.exe
+build-debug:
+	gcc quich.c -lm --coverage -o quich.exe
+clean:
+	rm -f *.o *.exe *.gcda *.gcno *.gcov

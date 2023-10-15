@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.727189
+@@ -658,7 +658,7 @@
+     trigonometric_warning = false;
+ 
+     while (node != NULL) {
+-        if (node->opcode == OP_Open_parenthesis) {
++        if (node->opcode > OP_Open_parenthesis) {
+             push(&operators, node);
+         } else if (node->opcode == OP_Closed_parenthesis) {
+             migrateUntilParenthesis(output, operators);

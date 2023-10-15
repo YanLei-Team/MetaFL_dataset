@@ -1,0 +1,8 @@
+build-debug:
+	clang++ -o ShortestPath.exe --coverage DijkstraShortestPathAlg.cpp MainP.cpp
+build-release:
+	clang++ -o ShortestPath.exe -O3 DijkstraShortestPathAlg.cpp MainP.cpp
+generate-gcov:
+	llvm-cov gcov DijkstraShortestPathAlg.cpp
+clean:
+	rm -f *.o *.exe *.gcov *.gcda *.gcno *.gch

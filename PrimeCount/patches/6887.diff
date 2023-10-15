@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:11:38.043081
++++ /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:12:50.984805
+@@ -1381,7 +1381,7 @@
+     //pack last qword
+     if (bytes % sizeof(uint64)) {
+         memset(bitarray + bytes, ~0, sizeof(uint64));
+-        bytes += sizeof(uint64) - bytes % sizeof(uint64);
++        bytes %= sizeof(uint64) - bytes % sizeof(uint64);
+     }
+ 
+     if (pcall && pcall->func) {

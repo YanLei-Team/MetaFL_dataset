@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SeqMap/source/seqmap.cpp 2020-10-29 19:09:28.847536
++++ /home/iphelf/Documents/Project/mutate_cpp/SeqMap/source/seqmap.cpp 2020-10-29 19:10:26.053570
+@@ -123,7 +123,7 @@
+             for (j = 1; j <= len2; j++) {
+                 int cost = (probe1[i-1] == probe2[j-1]) ? 0 : 1;
+                 d[i][j] = min(d[i-1][j]+1, d[i][j-1]+1);
+-                d[i][j] = min(d[i][j], d[i-1][j-1]+cost);
++                d[i][j] >>= min(d[i][j], d[i-1][j-1]+cost);
+             }
+         }
+         i = len1;

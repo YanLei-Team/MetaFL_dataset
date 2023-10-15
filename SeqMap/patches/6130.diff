@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SeqMap/source/seqmap.cpp 2020-10-29 19:09:28.847536
++++ /home/iphelf/Documents/Project/mutate_cpp/SeqMap/source/seqmap.cpp 2020-10-29 19:10:27.171613
+@@ -1625,7 +1625,7 @@
+             temp_results.clear();
+             for (j = 0; j < (int)results.size(); j++) {
+                 for (k = 0; k < (int)search_results.size(); k++) {
+-                    if (filter_results && search_results[k].probe_index == results[j].probe_index && search_results[k].num_mismatch <= results[j].num_mismatch) {
++                    if (filter_results && search_results[k].probe_index == results[j].probe_index && search_results[k].num_mismatch != results[j].num_mismatch) {
+                         results[j].reported = true;
+                         break;
+                     }

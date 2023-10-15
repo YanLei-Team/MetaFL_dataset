@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:11:38.043081
++++ /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:12:50.263851
+@@ -612,7 +612,7 @@
+     uint64 g1 = (g0 + (x >> s)) >> 1;
+ 
+     while (g1 < g0) {
+-        g0 = g1;
++        g0 -= g1;
+         g1 = (g1 + x / g1) >> 1;
+     }
+ 

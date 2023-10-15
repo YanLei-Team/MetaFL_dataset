@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:13:55.486021
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:16:07.198136
+@@ -7176,7 +7176,7 @@
+ 	  while (beg > buf && beg[-1] != eol)
+ 	    --beg;
+ 	  /* Successful, no backreferences encountered! */
+-	  if (!backref)
++	  if (backref)
+ 	    goto success;
+ 	}
+       /* If we've made it to this point, this means DFA has seen

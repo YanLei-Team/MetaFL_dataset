@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:13:55.486021
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:16:05.706513
+@@ -2628,7 +2628,7 @@
+ 	if (! d->states[i].first_end)
+ 	  d->states[i].first_end = d->tokens[s->elems[j].index];
+       }
+-    else if (d->tokens[s->elems[j].index] == BACKREF)
++    else if (d->tokens[s->elems[j].index] > BACKREF)
+       {
+ 	d->states[i].constraint = NO_CONSTRAINT;
+ 	d->states[i].backref = 1;

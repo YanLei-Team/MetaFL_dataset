@@ -1,0 +1,7 @@
+#!/bin/bash
+# $1: inputs
+# $2: scheme, id, source, target
+args=($2)
+echo "$1/${args[0]}/${args[1]}"
+echo "${args[2]}"
+echo "${args[3]}"

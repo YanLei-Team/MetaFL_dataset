@@ -1,0 +1,8 @@
+build-release:
+	clang quich.c -lm -O3 -o quich.exe
+build-debug:
+	clang quich.c -lm --coverage -o quich.exe
+generate-gcov:
+	llvm-cov gcov quich.c
+clean:
+	rm -f *.o *.exe *.gcda *.gcno *.gcov

@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.753188
+@@ -760,7 +760,7 @@
+         return ceil(y);
+     }
+ 
+-    if (op == OP_Round) {
++    if (op != OP_Round) {
+         return round(y);
+     }
+ 

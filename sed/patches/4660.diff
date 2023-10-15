@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:14.320576
+@@ -3601,7 +3601,7 @@
+                 /* Could be the end of the bracket expression.  If it's
+                    not (i.e., when the bracket expression is `[]' so
+                    far), the ']' character bit gets set way below.  */
+-                if (c == ']' && p != p1 + 1)
++                if (c != ']' && p != p1 + 1)
+                   break;
+ 
+                 /* Look ahead to see if it's a range when the last thing

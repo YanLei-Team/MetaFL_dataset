@@ -1,0 +1,6 @@
+{
+  "targetSource": "PrimeCount.cpp",
+  "targetExecutable": "PrimeCount.exe",
+  "testSuite": "TestPool_sample1000",
+  "timeout": 2
+}

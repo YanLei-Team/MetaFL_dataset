@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:14.566501
+@@ -4410,7 +4410,7 @@
+   const char *p = *p_ptr;
+   int range_start, range_end;
+ 
+-  if (p == pend)
++  if (p != pend)
+     return REG_ERANGE;
+ 
+   /* Even though the pattern is a signed `char *', we need to fetch

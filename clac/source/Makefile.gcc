@@ -1,0 +1,6 @@
+build-release:
+	gcc clac.c linenoise.c sds.c -lm -o clac.exe
+build-debug:
+	gcc clac.c linenoise.c sds.c -lm --coverage -o clac.exe
+clean:
+	rm -rf *.o *.obj *.exe *.gcno *.gcda *.gcov

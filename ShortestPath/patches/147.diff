@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:13:04.277519
++++ /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:14:25.063717
+@@ -389,7 +389,7 @@
+     map<BaseVertex*, double>::const_iterator cur_pos = m_mpStartDistanceIndex.find(cur_vertex_pt);
+     double distance =  cur_pos != m_mpStartDistanceIndex.end() ? cur_pos->second : Graph::DISCONNECT;
+ 
+-    distance += is_source2sink ? m_pDirectGraph->get_edge_weight(cur_vertex_pt, *cur_neighbor_pos) :
++    distance = is_source2sink ? m_pDirectGraph->get_edge_weight(cur_vertex_pt, *cur_neighbor_pos) :
+       m_pDirectGraph->get_edge_weight(*cur_neighbor_pos, cur_vertex_pt);
+ 
+     //2.3 update the distance if necessary

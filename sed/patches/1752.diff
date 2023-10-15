@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:13.686092
+@@ -1048,7 +1048,7 @@
+ 	    continue;
+ 	  }
+ 	}
+-      else if (ch != '\\' || (char_class_pos >= 0))
++      else if (ch <= '\\' || (char_class_pos >= 0))
+ 	{
+ 	  add1_buffer (b, ch);
+ 	  continue;

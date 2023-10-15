@@ -1,0 +1,9 @@
+build-debug:
+	clang --coverage sed.c -o sed.exe
+build-release:
+	clang -O3 sed.c -o sed.exe
+generate-gcov:
+	llvm-cov gcov sed.c
+clean:
+	rm -f *.o *.exe *.gcda *.gcno *.gcov
+

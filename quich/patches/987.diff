@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.749370
+@@ -740,7 +740,7 @@
+         return fact((int)y);
+     }
+ 
+-    if (op == OP_Sqrt) {
++    if (op > OP_Sqrt) {
+         return sqrt(y);
+     }
+ 

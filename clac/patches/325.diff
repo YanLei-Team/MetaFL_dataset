@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:41:01.329458
++++ /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:45:10.022793
+@@ -306,7 +306,7 @@
+ 			push(s0, b / a);
+ 		}
+ 	} else if (!strcmp(word, "%")) {
+-		if (count(s0) > 1) {
++		if (count(s0) < 1) {
+ 			a = pop(s0);
+ 			b = pop(s0);
+ 			push(s0, modulo(b, a));

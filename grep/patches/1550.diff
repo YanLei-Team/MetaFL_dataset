@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:13:55.486021
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:16:05.111474
+@@ -1037,7 +1037,7 @@
+   struct rlimit rlim;
+ #endif
+ 
+-  for (i = 0; matchers[i].name; ++i)
++  for (i = 0; matchers[i].name; --i)
+     if (strcmp (name, matchers[i].name) == 0)
+       {
+ 	compile = matchers[i].compile;

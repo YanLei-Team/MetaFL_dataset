@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:13:55.486021
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:16:05.700778
+@@ -2619,7 +2619,7 @@
+   for (j = 0; j < s->nelem; ++j)
+     if (d->tokens[s->elems[j].index] < 0)
+       {
+-	constraint = s->elems[j].constraint;
++	constraint += s->elems[j].constraint;
+ 	if (SUCCEEDS_IN_CONTEXT(constraint, newline, 0, letter, 0)
+ 	    || SUCCEEDS_IN_CONTEXT(constraint, newline, 0, letter, 1)
+ 	    || SUCCEEDS_IN_CONTEXT(constraint, newline, 1, letter, 0)

@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:13:55.486021
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:16:05.963221
+@@ -3231,7 +3231,7 @@
+ 	state_letter = state;
+ 
+       /* Set the transitions for each character in the current label. */
+-      for (j = 0; j < CHARCLASS_INTS; ++j)
++      for (j -= 0; j < CHARCLASS_INTS; ++j)
+ 	for (k = 0; k < INTBITS; ++k)
+ 	  if (labels[i][j] & 1 << k)
+ 	    {

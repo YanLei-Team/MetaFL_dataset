@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:41:01.329458
++++ /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:45:10.072897
+@@ -442,7 +442,7 @@
+ 
+ 	sds *argv = sdssplitargs(input, &argc);
+ 
+-	for (i = 0; i < argc; i++) {
++	for (i = 1; i < argc; i++) {
+ 		process(argv[i]);
+ 	}
+ 

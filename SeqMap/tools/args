@@ -1,0 +1,14 @@
+#!/bin/bash
+# $1: inputs
+# $2: scheme, edit distance (e), id of probe sequences (T) & transcript reference string (p)
+args=($2)
+echo "${args[1]}"
+echo "$1/${args[0]}/T/${args[2]}"
+echo "$1/${args[0]}/p/${args[2]}"
+echo "/dev/stdout"
+echo "/allow_insdel:${args[1]}"
+echo "/output_alignment"
+echo "/silent"
+echo "/output_all_matches"
+#echo "/output_top_matches:6"
+echo "/available_memory:100"

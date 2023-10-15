@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:11:38.043081
++++ /home/iphelf/Documents/Project/mutate_cpp/PrimeCount/source/PrimeCount.cpp 2020-12-28 16:12:51.033310
+@@ -1448,7 +1448,7 @@
+             eratSieveBig(bitarray + offset, big_size);
+     }
+ 
+-    return sieve_size / WHEEL30 + (7 + WheelInit30[sieve_size % WHEEL30].WheelIndex) / 8;
++    return sieve_size / WHEEL30 + (7 + WheelInit30[sieve_size % WHEEL30].WheelIndex) % 8;
+ }
+ 
+ static int segmentedSieve2(uchar bitarray[], const uint start, const uint sieve_size, bool bcopy)

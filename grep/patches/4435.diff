@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:13:55.486021
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-grep/source/grep.c 2021-02-14 18:16:05.552969
+@@ -2221,7 +2221,7 @@
+ 		    }
+ 		}
+ 	      else
+-		c2 = c;
++		c2 |= c;
+ 
+ 	      lo[0] = c;  lo[1] = '\0';
+ 	      hi[0] = c2; hi[1] = '\0';

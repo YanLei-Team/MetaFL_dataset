@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:41:01.329458
++++ /home/iphelf/Documents/Project/mutate_cpp/clac/source/clac.c 2021-02-10 21:45:10.066302
+@@ -427,7 +427,7 @@
+ 	} else if ((n = get(word)) != NULL) {
+ 		eval(n->meaning);
+ 	} else {
+-		a = strtod(word, &z);
++		a += strtod(word, &z);
+ 
+ 		if (*z == '\0') {
+ 			push(s0, a);

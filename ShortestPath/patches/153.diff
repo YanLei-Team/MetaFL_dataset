@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:13:04.277519
++++ /home/iphelf/Documents/Project/mutate_cpp/ShortestPath/source/DijkstraShortestPathAlg.cpp 2020-12-15 23:14:25.065881
+@@ -394,7 +394,7 @@
+ 
+     //2.3 update the distance if necessary
+     cur_pos = m_mpStartDistanceIndex.find(*cur_neighbor_pos);
+-    if (cur_pos == m_mpStartDistanceIndex.end() || cur_pos->second > distance)
++    if (cur_pos == m_mpStartDistanceIndex.end() || cur_pos->second == distance)
+     {
+       m_mpStartDistanceIndex[*cur_neighbor_pos] = distance;
+       m_mpPredecessorVertex[*cur_neighbor_pos] = cur_vertex_pt;

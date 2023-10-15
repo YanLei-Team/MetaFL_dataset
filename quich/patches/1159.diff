@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.785315
+@@ -860,7 +860,7 @@
+         x = pop(list);
+     }
+ 
+-    result = getOpResult(node->opcode, x, y);
++    result += getOpResult(node->opcode, x, y);
+     if (precision >= 0) {
+         result = round_(result, precision);
+     }

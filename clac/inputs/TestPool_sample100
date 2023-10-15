@@ -1,0 +1,100 @@
+s 4649 8.711385 log 3.255319 + ln sin erf 7.280513 / 9.343677 / ceil ceil sin 8.539207 erf cos / floor
+s 5023 4.217734 cos erf tan cos erf sin 11.907411 5.121605 6.892579 * cos drop 5.509407 7.792439 * / sin 4.862477 2.533345 * tan sin tan ln sin 14.661555 log / drop / floor
+s 2442 2.127673 log 7.173296 ln round / log tan abs tan tan round cos sin erf cos abs 7.745711 / log ceil 6.986146 1.580269 * tan cos /
+s 3857 4.371587 abs 15.875091 log round cos % erf round -0.496740 cos sin erf erf / 4.068497 sin + ceil 3.061673 ln 6.180249 sin tan cos 5.188432 -1.818818 floor 0.257694 -5.440152 + % drop - / -
+s 2856 -0.006540 floor 11.677006 drop sin
+s 3333 3.107193 log 1.363394 7.682287 ln - drop sin ceil 2.398165 log -1.219932 ceil - / 12.799590 drop
+s 2422 7.025258 floor 7.786785 abs 7.575034 abs - log drop
+s 2712 1.885627 4.066252 / tan cos 5.274483 cos cos abs abs + -1.507826 abs 1.552743 ln tan sin - floor ln * 3.195220 + tan
+s 1992 6.204011 6.569495 abs log % ln tan round 5.897934 1.128535 round % ceil floor /
+s 3664 -3.495236 0.340227 % abs 1.040660 10.715927 / 8.630133 tan cos -4.612885 * floor drop % -2.196242 0.710858 6.399398 drop cos 9.961021 - * drop
+s 4989 5.174455 tan 16.213285 ln abs erf tan cos +
+s 2348 -1.325430 7.821044 3.595462 drop ln cos 3.906872 * sin drop 8.188372 2.301683 log tan 12.533282 sin % ceil 2.921387 / 4.710883 -3.532620 log floor drop floor tan % - -
+s 3469 7.774720 9.575169 drop
+s 5519 6.433081 13.197704 / ln floor cos cos floor sin 6.418852 1.057604 cos round 11.295442 round * floor round drop %
+s 748 4.997950 -0.377507 1.758727 erf -2.052839 abs floor sin + tan / tan 10.107843 drop 8.874496 -4.087309 + round 15.680059 -3.067246 tan 8.422193 sin ceil abs ceil ceil * round - * % / erf
+s 4965 6.735617
+s 3936 3.797828 7.136832 tan / ceil
+s 2834 -2.281664 2.342690 ln - ceil
+s 3811 15.667409 5.331497 4.633730 + * 9.301853 floor +
+s 2245 15.478668 tan tan abs 4.193320 log tan tan sin sin % log 9.919264 1.130243 % round drop round 3.913437 6.814569 0.882590 ceil tan drop 10.324764 erf / abs 11.586070 erf round log sin erf drop drop sin drop
+s 114 5.171943 1.009296 ln abs round cos * -0.942071 *
+s 4834 2.208365 round ln tan floor 6.350986 log - 8.292996 abs 6.417500 7.296285 ceil drop log * log ceil erf drop
+s 1303 5.626339 ln cos -6.487922 round tan + abs erf cos round
+s 1959 7.859744 round 7.707783 ceil 12.940279 erf / % erf ceil -0.841400 5.158486 erf ln + sin ceil tan round abs 4.588585 10.181965 - cos ceil - abs abs /
+s 1053 3.861595 10.386484 ln cos 8.138167 round erf 0.507848 round * ceil drop 12.996139 2.003520 floor 5.390329 sin abs ceil tan - floor ceil abs ln log tan / 5.112183 * 11.029513 log - log + drop
+s 5370 5.930871 cos abs 0.668255 round drop log round cos 1.912072 tan 0.417219 ln * sin * erf 4.371337 sin ceil 10.224276 - erf abs drop floor
+s 2465 9.252677 sin 7.432207 + round tan tan 8.837528 - 3.990387 0.231715 ln - -0.481898 6.715039 ln - 2.290567 5.288073 cos / log * ln ceil drop log + 4.999474 + erf
+s 1456 8.380162 round log abs 8.228090 % round
+s 5131 0.667123 sin cos 4.171078 12.537903 * drop erf abs -2.851633 3.661178 cos - tan log abs ceil log floor erf abs erf erf abs drop
+s 3939 2.652409 ln tan cos -2.582497 - 7.077757 cos log drop ceil
+s 4026 6.272417 8.643040 drop
+s 564 9.823743 0.266833 + floor ln
+s 1383 9.072846
+s 2963 -2.156896 9.047061 10.360267 cos round * cos sin drop sin tan 3.882371 tan 3.627338 tan abs floor * abs drop
+s 3930 7.210320 floor tan sin -3.150167 - abs floor log -2.381497 ceil cos erf 9.239017 erf round abs * ceil 9.824019 % 5.443032 7.244324 drop tan 0.377566 5.503000 1.789457 - + / drop drop sin
+s 2127 -2.082377 cos erf ceil
+s 2196 0.839899 -5.276593 round - 1.992252 cos - ceil abs round 5.898814 20.406425 3.101285 / cos - + erf
+s 3552 0.791208 2.539133 cos / sin round
+s 5033 -2.113609 10.593568 4.067899 round / 8.793333 cos tan % +
+s 3477 0.605239 log -4.621058 tan tan - round round
+s 4172 1.112981 8.361677 ceil drop sin 8.551792 * 8.510876 abs ceil -0.058806 / sin cos 7.173523 drop abs log ceil abs floor drop 1.863637 floor erf -7.024942 / tan 10.632007 6.822537 sin abs cos - erf abs - 0.641275 4.262825 ln + ceil tan abs + floor +
+s 5658 4.752954 ln ceil 0.668918 + round floor tan 3.221166 cos abs ceil * -2.426567 erf cos 1.314751 + erf tan ln drop 16.644042 9.884074 cos 3.946742 erf erf ceil floor floor - round ceil abs abs - tan -3.248415 round * -
+s 789 1.817177
+s 5 11.666683 erf floor 4.324547 * 1.808474 6.631118 round 12.350708 8.808253 * % cos round erf sin sin + - sin 5.266805 11.025415 % tan sin 8.271174 + drop
+s 67 0.620519 abs 9.058300 ln % erf -0.614644 / sin abs
+s 4615 4.339644 erf ln 7.372979 drop 6.349030 -6.651573 drop * 0.141529 erf -1.577292 ln * log sin log 3.580141 tan erf round round drop sin 2.741850 round 10.912122 erf round cos abs % abs log drop log cos drop
+s 3346 10.016978 1.600568 * log ceil cos 7.463934 *
+s 5558 6.321111 ceil 7.236862 8.252214 1.364381 ln erf % tan tan - abs round + 2.492263 / cos
+s 2107 -0.766222 cos -1.407221 % round 4.069341 5.189908 drop round floor cos tan tan 7.729899 1.813054 7.274706 cos * abs floor drop floor * 6.324399 tan -2.566747 abs - abs cos abs abs log % % abs
+s 5637 7.774166 12.392554 floor % floor ceil round 2.373181 3.750099 cos abs ceil drop - ceil 3.047378 * ln
+s 13 9.513980 sin 5.789964 0.179852 ceil + 7.144572 + 10.356675 drop 1.429817 -1.052111 cos round - erf tan log ln 3.843745 drop tan * /
+s 5062 7.608905 log 5.980036 4.878102 cos drop floor tan round -0.452096 10.615757 drop 4.816964 * 7.567435 -0.532474 % log ln log * drop log tan drop ceil -1.150308 -
+s 5027 13.821481 23.762298 - tan tan floor floor erf
+s 1786 6.593060 floor round 8.640277 2.779731 drop 0.471669 sin * / ln
+s 1295 0.863212 3.216341 sin -4.341640 * cos 9.347614 / abs erf 6.522337 10.212176 cos + log drop *
+s 5662 4.249893 10.999605 + tan floor tan ceil cos ln abs tan cos cos ln
+s 4067 -0.336929 1.206257 - erf sin 14.080044 2.532230 tan 5.212565 + abs 8.096256 ceil round - floor 6.883483 log ceil 8.483206 abs cos / sin * * +
+s 4364 12.010411 4.457656 log 9.740637 ln 4.940396 ceil - erf round floor 4.903407 * log drop ceil -1.493022 + +
+s 4865 4.011066 tan tan 3.486674 log cos cos ceil cos 13.498535 ln 7.068961 abs ceil abs % % / cos floor 9.995706 erf abs round 16.661733 + drop round
+s 4192 -2.950277 round round abs round 0.103744 tan * sin tan -1.177612 * 8.239767 - 2.810455 1.698612 11.911465 / log ceil / ceil drop
+s 1922 1.352930 round floor ceil 17.682826 2.459803 floor + ln + floor 8.185983 tan 10.261913 log round round erf drop + 7.710655 drop
+s 109 10.627996 floor 11.502734 3.788430 + ceil drop -0.740228 sin 2.868389 tan * erf log floor +
+s 1838 4.061707 -0.501862 + abs 4.609262 cos - 5.448416 / ceil floor 9.480351 / 0.225539 ln -
+s 2964 3.307644 2.213011 ln * floor tan abs round erf 5.574246 erf floor 1.902655 log 18.920828 -9.483064 % log 10.137920 % log 6.063653 ln drop ln / % drop erf -0.319468 cos ceil 12.550936 + %
+s 4353 0.891594 6.307226 ln tan - log erf 15.671594 round 6.393161 cos - cos cos 7.818040 round 6.887574 / ln * 9.945679 ln 3.917171 abs floor 13.345671 drop ceil + -0.702837 ceil ln 5.176480 + + erf sin - %
+s 4662 1.408570 5.682293 /
+s 5122 4.716090
+s 1062 -0.265887 round abs 1.803743 floor ln 8.235440 - erf log abs tan log abs sin tan 3.480179 % ceil abs -3.787836 18.282377 floor cos - round log erf sin ln ceil erf round % round drop ceil -2.942456 5.429891 - * abs cos cos floor 2.012281 +
+s 5072 7.239717 abs tan 7.034087 -
+s 3667 1.393346 abs erf floor 2.118375 round -1.227441 * tan erf erf 5.273420 sin 6.508168 log - erf erf cos erf ceil 9.192022 / - - 4.575426 tan erf / sin 6.713601 *
+s 884 11.879858 sin 8.050025 6.813293 floor / 5.314960 tan cos 2.918655 sin 10.824366 * floor abs cos abs drop ln floor 3.002301 cos floor ln 8.257971 5.810225 erf + drop sin * log drop -
+s 2474 20.401545 2.227396 2.457478 floor % cos sin cos floor 5.905299 round * tan drop tan floor -2.205430 8.574028 abs abs sin % erf log tan ceil erf abs 8.692388 log / /
+s 3291 0.739547
+s 2307 5.347943 round cos 2.663895 6.786826 ln abs abs 15.424033 % abs 0.943968 / erf + sin 5.643585 6.134098 / log - drop
+s 4449 1.542441 11.311400 erf 3.825038 ln tan floor 5.806969 % sin / 7.559587 floor 3.618638 -2.507293 6.730298 sin ceil round 7.379480 * erf + % drop * *
+s 577 5.455587
+s 572 3.569914 ln cos floor 4.787068 + tan erf tan
+s 2566 11.493641 ceil abs 8.333489 % erf 1.525867 cos 2.563515 log 6.987229 0.701116 13.489703 log sin floor -1.712529 9.260943 / 1.024474 - tan tan -0.576265 + floor tan drop round % / / * drop floor
+s 2925 1.890652 5.281325 log log *
+s 3372 0.256217 2.669247 - ceil abs 1.886142 8.186379 4.124176 - % cos round 2.416200 round abs log 7.873710 drop / 4.235920 ceil ln + ceil abs % 7.607252 *
+s 2393 -3.832350
+s 1777 -2.864876 5.061633 0.520874 ceil + %
+s 1826 5.914457 ceil sin 6.349443 - round floor ceil ceil
+s 1524 7.862476 round 4.785516 floor round abs 5.409169 ceil / % 6.206635 -4.240313 sin - -1.178361 erf erf sin ln 5.382882 12.210951 tan abs * ln cos sin round sin tan ceil ceil tan tan % drop -1.708853 / /
+s 3128 -0.114889 12.812960 ceil / 0.875869 9.490511 16.422542 floor % - sin / -2.952868 /
+s 3072 2.515388 9.952279 / ln round
+s 3521 0.513783 6.919829 1.330091 / tan 14.328391 + tan cos - 11.253549 abs -4.823928 log abs drop round -4.484892 drop tan erf +
+s 2924 15.343707 floor 8.471701 erf ceil 5.061024 ceil tan floor floor tan -5.608536 cos sin / ceil % drop
+s 5383 6.534666
+s 3975 2.029071 3.095884 4.571277 % log ln + ln ceil 13.153813 ceil floor ln erf sin ln 5.434092 round 9.394032 floor sin * 9.788159 % 2.063774 erf -1.014251 sin abs ceil tan erf abs * sin erf round drop + - ceil
+s 5301 5.573165 abs 9.675893 3.760171 tan cos sin tan floor -12.449752 tan 16.522922 9.091646 erf tan 8.139146 ln * round round * / ceil 1.080826 % drop / round log drop
+s 2334 1.958831 14.722767 * 6.871113 6.100344 round + ln drop ceil
+s 5009 12.903516 erf 1.400861 round % ceil sin ceil 4.201617 %
+s 784 13.428503 0.191131 4.895063 + round log - -2.241190 8.531367 % ceil erf 8.293652 ceil erf * 2.832658 + 4.371966 3.846251 * -1.038629 - / /
+s 2692 6.162503 log 2.523576 10.641024 / - floor cos ceil sin 3.126804 %
+s 1205 4.296027 ln 5.163597 floor erf ceil erf -2.226299 round + cos + -0.463355 5.835551 sin * ceil 2.148005 8.585335 erf - ln ceil cos 2.787281 ceil ceil abs / - tan / 3.474314 ceil 0.635495 sin ln 9.311177 abs % abs * - 5.689490 drop
+s 1552 3.456093 5.706908 round * 2.962444 4.840171 ln 15.276405 floor log / % - sin
+s 1972 3.735387 sin -3.132624 round drop floor floor sin erf
+s 740 7.847810 floor abs 10.789289 abs ln erf 3.070460 4.553467 sin 12.628071 - cos drop * 5.139921 log ln round drop floor cos - 3.015444 round %
+s 5674 7.760067 cos 4.167287 % 6.532074 sin 8.222934 tan 3.000336 * round round log cos drop 0.491995 floor sin 6.002365 -3.260278 drop % tan 2.212852 drop / / 7.160857 log cos - ceil

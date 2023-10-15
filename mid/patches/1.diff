@@ -1,0 +1,11 @@
+--- mid.cpp	2023-04-15 01:27:36.225460655 +0800
++++ mid-f3.cpp	2023-04-15 01:36:29.016677655 +0800
+@@ -5,7 +5,7 @@
+   int x{atoi(argv[1])}, y{atoi(argv[2])}, z{atoi(argv[3])}, m{z};
+   if (y < z) {
+     if (x < y)
+-      m = y;
++      m = x;
+     else if (x < z)
+       m = x;
+   } else {

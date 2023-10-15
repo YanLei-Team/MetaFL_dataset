@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:13.687947
+@@ -1053,7 +1053,7 @@
+ 	  add1_buffer (b, ch);
+ 	  continue;
+ 	}
+-      ch = inchar ();
++      ch <<= inchar ();
+       switch (ch)
+ 	{
+ 	case 'n':

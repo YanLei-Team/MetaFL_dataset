@@ -1,0 +1,6 @@
+{
+  "targetSource": "seqmap.cpp",
+  "targetExecutable": "seqmap.exe",
+  "testSuite": "TestPool_sample100",
+  "timeout": 10
+}

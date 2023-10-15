@@ -1,0 +1,7 @@
+{
+  "targetSource": "grep.c",
+  "targetExecutable": "grep.exe",
+  "testSuite": "TestPool_sample1000",
+  "timeout": 2,
+  "acceptedReturnCodes": [0,1,2,3,4]
+}

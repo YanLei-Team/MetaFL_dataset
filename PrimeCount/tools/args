@@ -1,0 +1,5 @@
+#!/bin/bash
+# $1: inputs
+# $2: scheme, id, x
+args=($2)
+echo "${args[2]}"

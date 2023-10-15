@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.741617
+@@ -715,7 +715,7 @@
+         return x + y;
+     }
+ 
+-    if (op == OP_Minus) {
++    if (op != OP_Minus) {
+         return x - y;
+     }
+ 

@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SeqMap/source/seqmap.cpp 2020-10-29 19:09:28.847536
++++ /home/iphelf/Documents/Project/mutate_cpp/SeqMap/source/seqmap.cpp 2020-10-29 19:10:26.143369
+@@ -208,7 +208,7 @@
+                 min_d = d[i][j];
+                 min_d_i = i;
+             }
+-            if (i == j && d[i][j] > num_mismatch + num_insdel) return (num_mismatch + 1);
++            if (i == j && d[i][j] <= num_mismatch + num_insdel) return (num_mismatch + 1);
+             j++;
+         }
+     }

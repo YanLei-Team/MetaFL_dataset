@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.622342
+@@ -357,7 +357,7 @@
+         addToken(list, "0");
+     }
+ 
+-    if (list->last == NULL) {
++    if (list->last >= NULL) {
+         list->last = new;
+         list->first = list->last;
+         return;

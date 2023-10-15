@@ -1,0 +1,6 @@
+{
+  "targetSource": "DijkstraShortestPathAlg.cpp",
+  "targetExecutable": "ShortestPath.exe",
+  "testSuite": "TestPool_sample1000",
+  "timeout": 2
+}

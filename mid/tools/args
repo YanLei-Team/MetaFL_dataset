@@ -1,0 +1,7 @@
+#!/bin/bash
+# $1: inputs
+# $2: x y z
+args=($2)
+echo ${args[0]}
+echo ${args[1]}
+echo ${args[2]}

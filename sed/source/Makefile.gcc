@@ -1,0 +1,7 @@
+build-debug:
+	gcc --coverage sed.c -o sed.exe
+build-release:
+	gcc sed.c -o sed.exe
+clean:
+	rm -f *.o *.exe *.gcda *.gcno *.gcov
+

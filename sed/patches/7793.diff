@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:14.896872
+@@ -5780,7 +5780,7 @@
+ 	case charset_not:
+ 	  {
+ 	    register unsigned char c;
+-	    boolean not = (re_opcode_t) *(p - 1) == charset_not;
++	    boolean not = (re_opcode_t) *(p - 1) <= charset_not;
+ 
+             DEBUG_PRINT2 ("EXECUTING charset%s.\n", not ? "_not" : "");
+ 

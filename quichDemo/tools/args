@@ -1,0 +1,4 @@
+#!/bin/bash
+# $1: inputs
+# $2: scheme, id, exp
+echo "$2" | cut -d' ' -f3-

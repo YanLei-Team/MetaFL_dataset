@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "-Ei"
+echo "$2"
+echo "$1/file.test"

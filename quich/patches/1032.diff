@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.756086
+@@ -772,7 +772,7 @@
+         return y * ONE_MB;
+     }
+ 
+-    if (op == OP_Gb) {
++    if (op >= OP_Gb) {
+         return y * ONE_GB;
+     }
+ 

@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.759329
+@@ -784,7 +784,7 @@
+         return y * ONE_PT;
+     }
+ 
+-    if (degree && isTrigonometric(op)) {
++    if (degree || isTrigonometric(op)) {
+         y = y / 180 * MATH_PI;
+     }
+ 

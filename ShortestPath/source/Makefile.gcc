@@ -1,0 +1,6 @@
+build-debug:
+	g++ -o ShortestPath.exe --coverage DijkstraShortestPathAlg.cpp MainP.cpp
+build-release:
+	g++ -o ShortestPath.exe DijkstraShortestPathAlg.cpp MainP.cpp
+clean:
+	rm -f *.o *.exe *.gcov *.gcda *.gcno *.gch

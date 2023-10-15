@@ -1,0 +1,6 @@
+build-debug:
+	g++ -o seqmap.exe --coverage seqmap.cpp
+build-release:
+	g++ -o seqmap.exe seqmap.cpp
+clean:
+	rm -f *.o *.exe

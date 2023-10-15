@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.599048
+@@ -273,7 +273,7 @@
+     }
+ 
+     return
+-        (getType(str[i-1]) == T_Operator && str[i - 1] != ')' && str[i - 1] != '!') &&
++        (getType(str[i-1]) == T_Operator && str[i - 1] != ')' && str[i - 1] == '!') &&
+         (list->last == NULL || !isNumber(list->last->value));
+ }
+ 

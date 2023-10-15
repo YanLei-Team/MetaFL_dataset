@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:53:49.690420
++++ /home/iphelf/Documents/Project/mutate_cpp/quich/source/quich.c 2021-02-17 20:54:22.587594
+@@ -242,7 +242,7 @@
+ 
+     for (i = 0; i < len; i++) {
+         /* Signed number */
+-        if (i == 0 && (str[i] == '-' || str[i] == '+')) {
++        if (i == 0 && (str[i] == '-' || str[i] != '+')) {
+             continue;
+         }
+ 

@@ -1,0 +1,20 @@
+# Lab generated folders
+/*/backup
+/*/execution
+/*/inputs/f
+/*/mutation
+/*/oracles
+/*/outputs
+/*/results
+
+# Generated files
+*.tar.gz
+*.exe
+
+# Qt generated files
+*.user
+build-*-Debug
+
+# KDE Dolphin generated files
+.directory
+

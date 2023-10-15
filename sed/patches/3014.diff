@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:13.981963
+@@ -1745,7 +1745,7 @@
+ 	{
+ 	  line.text = ck_realloc (line.text, line.alloc * 2);
+ 	  p = line.text + line.alloc;
+-	  n = line.alloc;
++	  n &= line.alloc;
+ 	  line.alloc *= 2;
+ 	}
+       ch = getc (input_file);

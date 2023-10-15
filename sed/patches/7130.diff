@@ -1,0 +1,11 @@
+--- /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:08.862061
++++ /home/iphelf/Documents/Project/mutate_cpp/SIR-sed/source/sed.c 2021-02-24 21:59:14.777053
+@@ -5441,7 +5441,7 @@
+      variables when we find a match better than any we've seen before.
+      This happens as we backtrack through the failure points, which in
+      turn happens only if we have not yet matched the entire string. */
+-  unsigned best_regs_set = false;
++  unsigned best_regs_set = true;
+   const char **best_regstart, **best_regend;
+ 
+   /* Logically, this is `best_regend[0]'.  But we don't want to have to
