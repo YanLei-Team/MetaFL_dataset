@@ -6,6 +6,8 @@
 /*/oracles
 /*/outputs
 /*/results
+/*/tools/genMR
+/*/tools/checkMR
 
 # Generated files
 *.tar.gz
