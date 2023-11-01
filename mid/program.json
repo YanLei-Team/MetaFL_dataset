@@ -1,4 +1,5 @@
 {
+  "mutation": "mutations/example",
   "targetSource": "mid.cpp",
   "targetExecutable": "mid.exe",
   "testSuite": "TestPool_all",
