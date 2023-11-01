@@ -1,11 +1,10 @@
-#include <algorithm>
 #include <cassert>
-#include <cctype>
 #include <fstream>
 #include <iostream>
+#include <sstream>
 #include <random>
-#include <regex>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -18,7 +17,7 @@ struct I {
   vector<string> e;
 };
 
-template <typename T> istream &operator>>(istream &in, vector<T> &v) {
+template <typename T> istream &operator>>(istream &&in, vector<T> &v) {
   T t;
   while (in >> t)
     v.push_back(t);
@@ -35,7 +34,7 @@ template <typename T> ostream &operator<<(ostream &out, const vector<T> &v) {
 }
 
 struct O {
-  double r;
+  double r{0.0};
 };
 
 // ------------------------------- MR 1 -------------------------------

@@ -1,9 +1,7 @@
-#include <algorithm>
 #include <cassert>
 #include <cstdio>
 #include <fstream>
 #include <iostream>
-#include <map>
 #include <random>
 #include <sstream>
 #include <string>
@@ -20,7 +18,7 @@ struct I {
   vector<string> e;
 };
 
-template <typename T> istream &operator>>(istream &in, vector<T> &v) {
+template <typename T> istream &operator>>(istream &&in, vector<T> &v) {
   T t;
   while (in >> t)
     v.push_back(t);
@@ -37,7 +35,7 @@ template <typename T> ostream &operator<<(ostream &out, const vector<T> &v) {
 }
 
 struct O {
-  double r;
+  double r{0.0};
 };
 
 struct Case {
