@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.577505
+@@ -1411,7 +1411,7 @@
+         for (i = 0; i < (int)probe_lists.size(); i++) {
+             temp1.clear();
+             if (probe_lists[i]->search_probe(key, temp1)){
+-                for (j = 0; j < (int)temp1.size(); j++) {
++                for (j = 1; j < (int)temp1.size(); j++) {
+                     temp2.push_back(temp1[j]);
+                 }
+             }

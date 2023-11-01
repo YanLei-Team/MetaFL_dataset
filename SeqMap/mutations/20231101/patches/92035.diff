@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.442841
+@@ -1152,7 +1152,7 @@
+ 
+         int num_mask_sets = 0;
+         int max_num_mask_sets = 0;
+-        for (i = 0; i < num_lists; i++) {
++        for (i = 0; i <= num_lists; i++) {
+             num_mask_sets += (int)mask_sets[i].size();
+             max_num_mask_sets = max(max_num_mask_sets, (int)mask_sets[i].size());
+         }

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:39.647703
+@@ -9164,7 +9164,7 @@
+ 
+ /* Set the bit for character C in a list.  */
+ #define SET_LIST_BIT(c)                               \
+-  (b[((unsigned char) (c)) / BYTEWIDTH]               \
++  (b[((unsigned char) (c)) - BYTEWIDTH]               \
+    |= 1 << (((unsigned char) c) % BYTEWIDTH))
+ 
+ 

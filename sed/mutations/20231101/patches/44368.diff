@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.696126
+@@ -3212,7 +3212,7 @@
+ /* Set the bit for character C in a list.  */
+ #define SET_LIST_BIT(c)                               \
+   (b[((unsigned char) (c)) / BYTEWIDTH]               \
+-   |= 1 << (((unsigned char) c) % BYTEWIDTH))
++   = 1 << (((unsigned char) c) % BYTEWIDTH))
+ 
+ 
+ /* Get the next unsigned number in the uncompiled pattern.  */

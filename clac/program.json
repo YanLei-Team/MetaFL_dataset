@@ -1,7 +1,12 @@
 {
+  "mutation": "mutations/20231101",
   "targetSource": "clac.c",
   "targetExecutable": "clac.exe",
   "testSuite": "TestPool_sample1000",
   "timeout": 2,
-  "mrs": [1, 2, 3]
+  "mrs": [
+    1,
+    2,
+    3
+  ]
 }

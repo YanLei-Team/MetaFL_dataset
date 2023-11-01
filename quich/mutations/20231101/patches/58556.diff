@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.455300
+@@ -450,7 +450,7 @@
+         return 5;
+     }
+ 
+-    if (opcode == OP_Open_parenthesis ||
++    if (opcode != OP_Open_parenthesis ||
+         opcode == OP_Closed_parenthesis) {
+         return 4;
+     }

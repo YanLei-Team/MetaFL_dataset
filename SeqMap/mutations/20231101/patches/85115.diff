@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.931674
+@@ -181,7 +181,7 @@
+                 min_d_i = i;
+             }
+             if (i == j && d[i][j] > num_mismatch + num_insdel) return (num_mismatch + 1);
+-            j++;
++            j--;
+         }
+     }
+     if (min_d == d[probe2_len][probe2_len]) len = probe2_len;

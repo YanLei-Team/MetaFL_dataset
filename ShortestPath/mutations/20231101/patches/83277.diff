@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:41:10.156414
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:44:19.009965
+@@ -396,7 +396,7 @@
+     cur_pos = m_mpStartDistanceIndex.find(*cur_neighbor_pos);
+     if (cur_pos == m_mpStartDistanceIndex.end() || cur_pos->second > distance)
+     {
+-      m_mpStartDistanceIndex[*cur_neighbor_pos] = distance;
++      m_mpStartDistanceIndex[*cur_neighbor_pos] += distance;
+       m_mpPredecessorVertex[*cur_neighbor_pos] = cur_vertex_pt;
+ 
+       (*cur_neighbor_pos)->Weight(distance);

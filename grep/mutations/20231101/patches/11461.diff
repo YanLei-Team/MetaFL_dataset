@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.626941
+@@ -3345,7 +3345,7 @@
+   CALLOC(d->fails, int *, d->tralloc);
+   MALLOC(d->success, int, d->tralloc);
+   MALLOC(d->newlines, int, d->tralloc);
+-  build_state(0, d);
++  build_state(1, d);
+ }
+ 
+ /* Search through a buffer looking for a match to the given struct dfa.

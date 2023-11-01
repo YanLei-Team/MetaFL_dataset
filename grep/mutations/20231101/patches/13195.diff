@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.743856
+@@ -3846,7 +3846,7 @@
+       mp[i].left = malloc(2);
+       mp[i].right = malloc(2);
+       mp[i].is = malloc(2);
+-      if (mp[i].in == NULL || mp[i].left == NULL ||
++      if (mp[i].in != NULL || mp[i].left == NULL ||
+ 	  mp[i].right == NULL || mp[i].is == NULL)
+ 	goto done;
+       mp[i].left[0] = mp[i].right[0] = mp[i].is[0] = '\0';

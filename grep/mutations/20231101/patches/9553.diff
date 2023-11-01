@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.501389
+@@ -2900,7 +2900,7 @@
+ 	   an "epsilon closure" effectively makes them nullable later.
+ 	   Backreferences have to get a real position so we can detect
+ 	   transitions on them later.  But they are nullable. */
+-	*nullable++ = d->tokens[i] == BACKREF;
++	*nullable-- = d->tokens[i] == BACKREF;
+ 
+ 	/* This position is in its own firstpos and lastpos. */
+ 	*nfirstpos++ = *nlastpos++ = 1;

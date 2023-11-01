@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.942074
+@@ -4435,7 +4435,7 @@
+      char' -- the range is inclusive, so if `range_end' == 0xff
+      (assuming 8-bit characters), we would otherwise go into an infinite
+      loop, since all characters <= 0xff.  */
+-  for (this_char = range_start; this_char <= range_end; this_char++)
++  for (this_char &= range_start; this_char <= range_end; this_char++)
+     {
+       SET_LIST_BIT (TRANSLATE (this_char));
+     }

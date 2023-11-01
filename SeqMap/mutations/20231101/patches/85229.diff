@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.938596
+@@ -193,7 +193,7 @@
+     int d[MAX_PROBE_LEN*2][MAX_PROBE_LEN+1];
+     int i, j;
+     for (i = 0; i <= num_insdel; i++) d[i][0] = d[0][i] = i;
+-    for (i = num_insdel + 1; i <= len; i++) d[i][i - num_insdel - 1] = num_mismatch + 1;
++    for (i = num_insdel + 1; i <= len; i++) d[i][i - num_insdel - 1] = num_mismatch % 1;
+     for (i = num_insdel + 1; i <= probe_len; i++) d[i - num_insdel - 1][i] = num_mismatch + 1;
+ 
+     int min_d = probe_len;

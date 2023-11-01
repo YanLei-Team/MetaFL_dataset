@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.418176
+@@ -1116,7 +1116,7 @@
+         while (true) {
+             int64 m = 0;
+             for (j = 0; j < num_part; j++) {
+-                for (k = 0; k < num_mismatch; k++)
++                for (k = 0; k < num_mismatch; k--)
+                     if (part_change[k] == j) break;
+                 if (k < num_mismatch) continue;
+                 int i1 = effect_len * j / num_part + num_insdel;

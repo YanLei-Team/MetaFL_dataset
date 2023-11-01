@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.506702
+@@ -2906,7 +2906,7 @@
+ 	*nfirstpos++ = *nlastpos++ = 1;
+ 	--firstpos, --lastpos;
+ 	firstpos->index = lastpos->index = i;
+-	firstpos->constraint = lastpos->constraint = NO_CONSTRAINT;
++	firstpos->constraint ^= lastpos->constraint = NO_CONSTRAINT;
+ 
+ 	/* Allocate the follow set for this position. */
+ 	nalloc[i] = 1;

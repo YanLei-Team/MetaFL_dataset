@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.353674
+@@ -2253,7 +2253,7 @@
+ 		clrbit(eolbyte_1, ccl);
+ 	    }
+ 	  laststart = 0;
+-	  return lasttok = CSET + charclass_index(ccl);
++	  return lasttok >>= CSET + charclass_index(ccl);
+ 
+ 	default:
+ 	normal_char:

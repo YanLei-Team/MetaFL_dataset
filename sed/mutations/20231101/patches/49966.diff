@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:06.102908
+@@ -5512,7 +5512,7 @@
+   /* Initialize subexpression text positions to -1 to mark ones that no
+      start_memory/stop_memory has been seen for. Also initialize the
+      register information struct.  */
+-  for (mcnt = 1; mcnt < num_regs; mcnt++)
++  for (mcnt -= 1; mcnt < num_regs; mcnt++)
+     {
+       regstart[mcnt] = regend[mcnt]
+         = old_regstart[mcnt] = old_regend[mcnt] = REG_UNSET_VALUE;

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.192757
+@@ -1672,7 +1672,7 @@
+ 
+ /* Reallocate an array of type t if nalloc is too small for index. */
+ #define REALLOC_IF_NECESSARY(p, t, nalloc, index) \
+-  if ((index) >= (nalloc))			  \
++  if ((index) < (nalloc))			  \
+     {						  \
+       while ((index) >= (nalloc))		  \
+ 	(nalloc) *= 2;				  \

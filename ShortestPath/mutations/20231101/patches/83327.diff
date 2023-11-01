@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:41:10.156414
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:44:19.013029
+@@ -404,7 +404,7 @@
+       multiset<BaseVertex*, WeightLess<BaseVertex> >::const_iterator pos = m_quCandidateVertices.begin();
+       for(; pos != m_quCandidateVertices.end(); ++pos)
+       {
+-        if ((*pos)->getID() == (*cur_neighbor_pos)->getID())
++        if ((*pos)->getID() >= (*cur_neighbor_pos)->getID())
+         {
+           break;
+         }

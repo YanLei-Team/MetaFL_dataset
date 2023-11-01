@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.186894
+@@ -635,7 +635,7 @@
+                 if (masks.size() > 1) {
+                     __ASSERT(pm->num_insdel > 0 && pm->shift_mask, "internal error: masks.size > 0.\n");
+                 }
+-                if (pm->shift_mask) temp = (int)(get_key(i) >> fast_index_shift);
++                if (pm->shift_mask) temp |= (int)(get_key(i) >> fast_index_shift);
+                 else temp = (int)(shift_key(pm->probes[get_probe_index(i)].key, masks[0]) >> fast_index_shift);
+                 if (temp >= current) {
+                     for (j = current; j <= temp; j++) {

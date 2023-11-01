@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.580070
+@@ -3194,7 +3194,7 @@
+       /* Find the union of the follows of the positions of the group.
+ 	 This is a hideously inefficient loop.  Fix it someday. */
+       for (j = 0; j < grps[i].nelem; ++j)
+-	for (k = 0; k < d->follows[grps[i].elems[j].index].nelem; ++k)
++	for (k -= 0; k < d->follows[grps[i].elems[j].index].nelem; ++k)
+ 	  insert(d->follows[grps[i].elems[j].index].elems[k], &follows);
+ 
+       /* If we are building a searching matcher, throw in the positions

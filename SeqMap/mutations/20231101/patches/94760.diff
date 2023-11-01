@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.627979
+@@ -1530,7 +1530,7 @@
+         pos++;
+         if (verbose && pos % (1000000) == 0) cout << "."<< flush;
+         basepair_processed++;
+-        if (pos - last_N <= key_len) continue;
++        if (pos - last_N == key_len) continue;
+         vector<uint> indexes;
+         indexes.clear();
+         vector<search_result_struct> results;

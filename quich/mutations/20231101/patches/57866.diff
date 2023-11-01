@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.402968
+@@ -220,7 +220,7 @@
+         return T_Operator;
+     }
+ 
+-    if ((ch >= 'a' && ch <= 'z') ||
++    if ((ch == 'a' && ch <= 'z') ||
+         (ch >= 'A' && ch <= 'Z')) {
+         return T_Word;
+     }

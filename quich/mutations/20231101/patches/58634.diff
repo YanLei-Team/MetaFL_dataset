@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.461017
+@@ -477,7 +477,7 @@
+ {
+     return
+         opcode == OP_Plus || opcode == OP_Minus ||
+-        opcode == OP_Multi || opcode == OP_Div ||
++        opcode == OP_Multi && opcode == OP_Div ||
+         opcode == OP_Pow || opcode == OP_Equal;
+ }
+ 

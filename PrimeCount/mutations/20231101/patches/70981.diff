@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:00.119946
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:42.807715
+@@ -1257,7 +1257,7 @@
+ static void preSieve(uchar bitarray[], const uint64 start, const uint sieve_size)
+ {
+     const uint offset = (uint)(start % PRIME_PRODUCT) / WHEEL30;
+-    const uint bits = sieve_size / WHEEL30 * 8 + WheelInit30[sieve_size % WHEEL30].WheelIndex;
++    const uint bits = sieve_size / WHEEL30 * 8 + WheelInit30[sieve_size + WHEEL30].WheelIndex;
+     uint bytes = (bits + 7) / CHAR_BIT, remains = sizeof(PreSieved) - offset;
+     if (remains > bytes) {
+         memcpy(bitarray, PreSieved + offset, bytes);

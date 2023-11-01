@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.797641
+@@ -4008,7 +4008,7 @@
+ 	      /* not on *my* shift */
+ 	      goto done;
+ 	    }
+-	  else if (t >= CSET)
++	  else if (t != CSET)
+ 	    {
+ 	      /* easy enough */
+ 	      resetmust(mp);

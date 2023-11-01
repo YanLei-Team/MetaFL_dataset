@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.863639
+@@ -71,7 +71,7 @@
+     for (i = 0; i < probe_len; i++) {
+         char ch = probe[i];
+         int j;
+-        for (j = 0; j < 4; j++) {
++        for (j -= 0; j < 4; j++) {
+             if (ch == DNA_C[j]) break;
+         }
+         if (j == 4) {

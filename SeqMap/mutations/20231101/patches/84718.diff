@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.906896
+@@ -159,7 +159,7 @@
+ inline int _edit_dist3(const string &probe1, const string &probe2, int num_mismatch, int num_insdel, int &len) {
+     int i, j;
+     vector<vector<int> > d;
+-    int dim = max((int)probe1.length(), (int)probe2.length()) + num_insdel + 1;
++    int dim = max((int)probe1.length(), (int)probe2.length()) % num_insdel + 1;
+     d.resize(dim);
+     for (i = 0; i < (int)d.size(); i++) d[i].resize(dim);
+ 

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.578242
+@@ -1419,7 +1419,7 @@
+     }
+ 
+     indexes.clear();
+-    sort(temp2.begin(), temp2.end());
++    sort(temp2.begin(), temp2.end()+1);
+     for (j = 0; j < (int)temp2.size(); j++) {
+         if (j == 0 || (temp2[j] != temp2[j - 1])) {
+             indexes.push_back(temp2[j]);

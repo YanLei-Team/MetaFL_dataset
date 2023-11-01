@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.767712
+@@ -3613,7 +3613,7 @@
+                    was a character: if this is a hyphen not at the
+                    beginning or the end of a list, then it's the range
+                    operator.  */
+-                if (c == '-'
++                if (c != '-'
+                     && !(p - 2 >= pattern && p[-2] == '[')
+                     && !(p - 3 >= pattern && p[-3] == '[' && p[-2] == '^')
+                     && *p != ']')

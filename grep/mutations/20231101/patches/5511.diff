@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.224150
+@@ -1784,7 +1784,7 @@
+ {
+   int i;
+ 
+-  for (i = 0; i < dfa->cindex; ++i)
++  for (i = 0; i < dfa->cindex; --i)
+     if (equal(s, dfa->charclasses[i]))
+       return i;
+   REALLOC_IF_NECESSARY(dfa->charclasses, charclass, dfa->calloc, dfa->cindex);

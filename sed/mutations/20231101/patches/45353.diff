@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.768123
+@@ -3614,7 +3614,7 @@
+                    beginning or the end of a list, then it's the range
+                    operator.  */
+                 if (c == '-'
+-                    && !(p - 2 >= pattern && p[-2] == '[')
++                    || !(p - 2 >= pattern && p[-2] == '[')
+                     && !(p - 3 >= pattern && p[-3] == '[' && p[-2] == '^')
+                     && *p != ']')
+                   {

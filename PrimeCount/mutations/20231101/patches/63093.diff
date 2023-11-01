@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:00.119946
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:42.304671
+@@ -453,7 +453,7 @@
+ 
+     for (i = 1; PRIME_PRODUCT % pattern[i] == 0; i ++) {
+         const int p = pattern[i];
+-        for (uint offset = p; offset < sizeof(PreSieved) * WHEEL30; offset += p * 2)
++        for (uint offset = p; offset < sizeof(PreSieved) / WHEEL30; offset += p * 2)
+             PreSieved[offset / WHEEL30] |= WheelInit30[offset % WHEEL30].MaskBit;
+     }
+ }

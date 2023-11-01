@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.563711
+@@ -3162,7 +3162,7 @@
+     {
+       wants_newline = 0;
+       wants_letter = 0;
+-      for (i = 0; i < d->states[0].elems.nelem; ++i)
++      for (i = 0; i < d->states[1].elems.nelem; ++i)
+ 	{
+ 	  if (PREV_NEWLINE_DEPENDENT(d->states[0].elems.elems[i].constraint))
+ 	    wants_newline = 1;

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.431345
+@@ -2599,7 +2599,7 @@
+ 	continue;
+       for (j = 0; j < s->nelem; ++j)
+ 	if (s->elems[j].constraint
+-	    != d->states[i].elems.elems[j].constraint
++	    = d->states[i].elems.elems[j].constraint
+ 	    || s->elems[j].index != d->states[i].elems.elems[j].index)
+ 	  break;
+       if (j == s->nelem)

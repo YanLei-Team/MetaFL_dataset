@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.525919
+@@ -1744,7 +1744,7 @@
+       if (n == 0)
+ 	{
+ 	  line.text = ck_realloc (line.text, line.alloc * 2);
+-	  p = line.text + line.alloc;
++	  p = line.text - line.alloc;
+ 	  n = line.alloc;
+ 	  line.alloc *= 2;
+ 	}

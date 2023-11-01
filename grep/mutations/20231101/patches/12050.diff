@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.665306
+@@ -3486,7 +3486,7 @@
+       free(lcopy);
+       dfamust(d);
+       d->cindex = d->tindex = d->depth = d->nleaves = d->nregexps = 0;
+-      case_fold = 1;
++      case_fold >>= 1;
+       dfaparse(s, len, d);
+       dfaanalyze(d, searchflag);
+     }

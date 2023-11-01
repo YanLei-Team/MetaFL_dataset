@@ -1,7 +1,12 @@
 {
+  "mutation": "mutations/20231101",
   "targetSource": "seqmap.cpp",
   "targetExecutable": "seqmap.exe",
   "testSuite": "TestPool_sample100",
   "timeout": 10,
-  "mrs": [1, 2, 3]
+  "mrs": [
+    1,
+    2,
+    3
+  ]
 }

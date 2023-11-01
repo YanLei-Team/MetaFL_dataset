@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.607020
+@@ -1490,7 +1490,7 @@
+ //            if (verbose && current_transcript > 1) cout << endl;
+ //            if (verbose) cout << "processing transcript " << transcript_id;
+             pos = zero_indexed?0:1;
+-            last_N = pos-1;
++            last_N = pos-2;
+             current_pos = 0;
+             line = "";
+             key = 0;

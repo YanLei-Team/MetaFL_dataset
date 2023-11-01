@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.167203
+@@ -603,7 +603,7 @@
+     inline void set_mask(vector<int64> &_masks){
+         masks = _masks;
+         build_mask0_tables();
+-        if ((int64)(masks.size()) * pm->num_probes > ((int64)(1) << 31)) panic("internal error: out of integer bound.");
++        if ((int64)(masks.size()) * pm->num_probes > ((int64)(1) | 31)) panic("internal error: out of integer bound.");
+         int i, j;
+         vector<pair<int64, int> > temp_probe_list;
+         for (i = 0; i < pm->num_probes; i++)

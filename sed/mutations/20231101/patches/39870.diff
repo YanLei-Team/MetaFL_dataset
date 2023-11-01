@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.344216
+@@ -1048,7 +1048,7 @@
+ 	    continue;
+ 	  }
+ 	}
+-      else if (ch != '\\' || (char_class_pos >= 0))
++      else if (ch == '\\' || (char_class_pos >= 0))
+ 	{
+ 	  add1_buffer (b, ch);
+ 	  continue;

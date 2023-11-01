@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.305590
+@@ -891,7 +891,7 @@
+     for (i = 0; i < probe_len; i++) {
+         if ((mask & ((int64)(3) << (i * 2))) == 0) {
+             int64 left = ((mask >> (i * 2)) << (i * 2));
+-            int64 right = mask - left;
++            int64 right = mask + left;
+             int64 new_mask = left + (right >> 2);
+             if (find(masks.begin(), masks.end(), new_mask) == masks.end()) masks.push_back(new_mask);
+             _insdel_masks(masks, new_mask, num_insdel-1);

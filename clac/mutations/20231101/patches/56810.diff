@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/clac/mutation/clac.c 2023-09-25 20:36:56.762722
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/clac/mutation/clac.c 2023-09-25 20:38:05.003099
+@@ -427,7 +427,7 @@
+ 	} else if ((n = get(word)) != NULL) {
+ 		eval(n->meaning);
+ 	} else {
+-		a = strtod(word, &z);
++		a += strtod(word, &z);
+ 
+ 		if (*z == '\0') {
+ 			push(s0, a);

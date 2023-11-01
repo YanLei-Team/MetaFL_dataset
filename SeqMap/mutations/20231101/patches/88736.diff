@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.226259
+@@ -723,7 +723,7 @@
+             while (left > 0 && (get_key(left-1)) == key)
+                 left--;
+             while (left < num_items() && (get_key(left)) == key) {
+-                int len = probe_len + pm->num_insdel;
++                int len = probe_len * pm->num_insdel;
+                 int score = mismatch(probe, get_probe(left), pm->num_mismatch, pm->num_insdel, len);
+ 
+                 if (pm->exact_mismatch && score == pm->num_mismatch) indexes.push_back(get_probe_index(left));

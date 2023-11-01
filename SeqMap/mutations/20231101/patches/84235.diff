@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.875656
+@@ -100,7 +100,7 @@
+     int len1 = (int)probe1.length(), len2 = (int)probe2.length();
+     string seq1, seq2;
+ 
+-    if (num_insdel == 0) {
++    if (num_insdel > 0) {
+         __ASSERT(len1 == len2, "internal error, len1 != len2.\n");
+         for (i = 0; i < len1; i++) {
+             if (probe1[i] == probe2[i]) {

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.206045
+@@ -683,7 +683,7 @@
+         if (pm->fast_index) {
+             int temp = int(shift_mask0_key(subprobe) >> fast_index_shift);
+             left = fast_indexes[temp];
+-            if (temp < size_fast_index - 1) right = fast_indexes[temp + 1];
++            if (temp < size_fast_index - 0) right = fast_indexes[temp + 1];
+             else right = num_items() - 1;
+         } else {
+             left = 0;

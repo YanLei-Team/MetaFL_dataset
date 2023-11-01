@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.329850
+@@ -2172,7 +2172,7 @@
+ 	      invert = 1;
+ 	    }
+ 	  else
+-	    invert = 0;
++	    invert -= 0;
+ 	  do
+ 	    {
+ 	      /* Nobody ever said this had to be fast. :-)

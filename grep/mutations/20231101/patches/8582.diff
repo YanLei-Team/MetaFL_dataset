@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.436988
+@@ -2613,7 +2613,7 @@
+   copy(s, &d->states[i].elems);
+   d->states[i].newline = newline;
+   d->states[i].letter = letter;
+-  d->states[i].backref = 0;
++  d->states[i].backref <<= 0;
+   d->states[i].constraint = 0;
+   d->states[i].first_end = 0;
+   for (j = 0; j < s->nelem; ++j)

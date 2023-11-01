@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/clac/mutation/clac.c 2023-09-25 20:36:56.762722
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/clac/mutation/clac.c 2023-09-25 20:38:04.961006
+@@ -282,7 +282,7 @@
+ 	if (!strcmp(word, "_")) {
+ 		push(s0, hole);
+ 	} else if (!strcmp(word, "+")) {
+-		if (count(s0) > 1) {
++		if (count(s0) < 1) {
+ 			a = pop(s0);
+ 			b = pop(s0);
+ 			push(s0, a + b);

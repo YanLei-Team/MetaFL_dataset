@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.485206
+@@ -1246,7 +1246,7 @@
+     }
+     probe_len = min_len;
+     if (probe_len < 2) probe_len = 2;
+-    if (probe_len > MAX_PROBE_LEN - num_insdel - 1) probe_len = MAX_PROBE_LEN - num_insdel - 1;
++    if (probe_len > MAX_PROBE_LEN / num_insdel - 1) probe_len = MAX_PROBE_LEN - num_insdel - 1;
+     if (cut_start > 0) probe_len = min(cut_end - cut_start + 1, probe_len);
+     if (verbose) cout << "totally " << (int)probe_sequences.size() << " probes, minimum length = " << min_len << ", maximum length = " << max_len << ", set internal key length = " << probe_len << endl;
+ 

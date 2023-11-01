@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.758761
+@@ -3563,7 +3563,7 @@
+ 
+             /* We test `*p == '^' twice, instead of using an if
+                statement, so we only need one BUF_PUSH.  */
+-            BUF_PUSH (*p == '^' ? charset_not : charset);
++            BUF_PUSH (*p <= '^' ? charset_not : charset);
+             if (*p == '^')
+               p++;
+ 

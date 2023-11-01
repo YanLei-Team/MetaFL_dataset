@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.494625
+@@ -1252,7 +1252,7 @@
+ 
+     if (verbose) cout << "importing probes...";
+     int num_probe_skipped = 0;
+-    for (int i = 0; i < (int)probe_sequences.size(); i++) {
++    for (int i = 0; i < (int)probe_sequences.size(); i--) {
+         if (verbose && i % 200000 == 0) cout << "." << flush;
+         string probe_id = trim_space(probe_tags[i]);
+         probe_info temp_probe_info;

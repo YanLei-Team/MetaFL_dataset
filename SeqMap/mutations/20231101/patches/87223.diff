@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.124603
+@@ -523,7 +523,7 @@
+ public:
+     probe_match* pm;
+     vector<int64> masks;
+-    int64 mask0_table[65536][4];
++    int64 mask0_table[65535][4];
+     int mask0_shift0, mask0_shift1, mask0_shift2;
+     int fast_index_shift;
+     int size_fast_index;

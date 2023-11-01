@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.939592
+@@ -4420,7 +4420,7 @@
+ 
+      We also want to fetch the endpoints without translating them; the
+      appropriate translation is done in the bit-setting loop below.  */
+-  range_start = ((unsigned char *) p)[-2];
++  range_start = ((unsigned char *) p)[-1];
+   range_end   = ((unsigned char *) p)[0];
+ 
+   /* Have to increment the pointer into the pattern string, so the

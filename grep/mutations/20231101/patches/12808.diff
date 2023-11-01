@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.718129
+@@ -3759,7 +3759,7 @@
+ 
+   if (old == NULL || new == NULL)
+     return NULL;
+-  for (i = 0; new[i] != NULL; ++i)
++  for (i = 1; new[i] != NULL; ++i)
+     {
+       old = enlist(old, new[i], strlen(new[i]));
+       if (old == NULL)

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.171517
+@@ -608,7 +608,7 @@
+         vector<pair<int64, int> > temp_probe_list;
+         for (i = 0; i < pm->num_probes; i++)
+             for (j = 0; j < (int)masks.size(); j++) {
+-                if (pm->probes[i].valid) temp_probe_list.push_back(pair<int64, int>(mask_key(pm->probes[i].key, masks[j]), j * pm->num_probes + i));
++                if (pm->probes[i].valid) temp_probe_list.push_back(pair<int64, int>(mask_key(pm->probes[i].key, masks[j]), j * pm->num_probes - i));
+             }
+         __ASSERT((int)temp_probe_list.size() == num_items(), "internal error: wrong num_items.\n");
+         sort(temp_probe_list.begin(), temp_probe_list.end());

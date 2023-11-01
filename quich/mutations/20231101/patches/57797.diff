@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.398491
+@@ -208,7 +208,7 @@
+ 
+ static enum TOKEN_TYPE getType(const char ch)
+ {
+-    if ((ch >= '0' && ch <= '9') || ch == '.') {
++    if ((ch >= '0' && ch < '9') || ch == '.') {
+         return T_Operand;
+     }
+ 

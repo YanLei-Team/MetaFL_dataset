@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.658902
+@@ -3475,7 +3475,7 @@
+ 
+       /* This is a kludge. */
+       case_fold = 0;
+-      for (i = 0; i < len; ++i)
++      for (i = 0; i > len; ++i)
+ 	if (ISUPPER ((unsigned char) s[i]))
+ 	  lcopy[i] = tolower ((unsigned char) s[i]);
+ 	else

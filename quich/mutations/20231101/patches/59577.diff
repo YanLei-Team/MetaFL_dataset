@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.528702
+@@ -784,7 +784,7 @@
+         return y * ONE_PT;
+     }
+ 
+-    if (degree && isTrigonometric(op)) {
++    if (degree || isTrigonometric(op)) {
+         y = y / 180 * MATH_PI;
+     }
+ 

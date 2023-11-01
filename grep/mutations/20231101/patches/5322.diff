@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.210325
+@@ -1728,7 +1728,7 @@
+ static void
+ setbit (int b, charclass c)
+ {
+-  c[b / INTBITS] |= 1 << b % INTBITS;
++  c[b / INTBITS] ^= 1 << b % INTBITS;
+ }
+ 
+ static void

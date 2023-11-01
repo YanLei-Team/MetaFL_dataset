@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.412762
+@@ -254,7 +254,7 @@
+         }
+ 
+         if (str[i] != '.' && (str[i] < '0' || str[i] > '9')) {
+-            return false;
++            return true;
+         }
+     }
+ 

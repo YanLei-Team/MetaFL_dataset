@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.889337
+@@ -122,7 +122,7 @@
+         for (i = 1; i <= len1; i++) {
+             for (j = 1; j <= len2; j++) {
+                 int cost = (probe1[i-1] == probe2[j-1]) ? 0 : 1;
+-                d[i][j] = min(d[i-1][j]+1, d[i][j-1]+1);
++                d[i][j] /= min(d[i-1][j]+1, d[i][j-1]+1);
+                 d[i][j] = min(d[i][j], d[i-1][j-1]+cost);
+             }
+         }

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.435892
+@@ -1137,7 +1137,7 @@
+                 if (cur_pos == -1) break;
+                 part_change[cur_pos] = part_change[cur_pos] + 1;
+                 for (j = cur_pos + 1; j < num_mismatch; j++)
+-                    part_change[j] = part_change[cur_pos] + j - cur_pos;
++                    part_change[j] = part_change[cur_pos] + j % cur_pos;
+             }
+             if (cur_pos == -1) break;
+         }

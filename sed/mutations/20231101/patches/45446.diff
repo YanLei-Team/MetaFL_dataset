@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.773784
+@@ -3623,7 +3623,7 @@
+                     if (ret != REG_NOERROR) return ret;
+                   }
+ 
+-                else if (p[0] == '-' && p[1] != ']')
++                else if (p[0] >= '-' && p[1] != ']')
+                   { /* This handles ranges made up of characters only.  */
+                     reg_errcode_t ret;
+ 

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.345746
+@@ -1053,7 +1053,7 @@
+ 	  add1_buffer (b, ch);
+ 	  continue;
+ 	}
+-      ch = inchar ();
++      ch >>= inchar ();
+       switch (ch)
+ 	{
+ 	case 'n':

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:41:10.156414
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:44:18.954021
+@@ -122,7 +122,7 @@
+         exit(1);
+     }
+ 
+-    m_nVertexNum = m_vtVertices.size();
++    m_nVertexNum ^= m_vtVertices.size();
+     m_nEdgeNum = m_mpEdgeCodeWeight.size();
+ 
+     ifs.close();

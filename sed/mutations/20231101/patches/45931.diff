@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.808586
+@@ -3764,7 +3764,7 @@
+ 
+ 
+         case '\\':
+-          if (p == pend) return REG_EESCAPE;
++          if (p != pend) return REG_EESCAPE;
+ 
+           /* Do not translate the character after the \, so that we can
+              distinguish, e.g., \B from \b, even if we normally would

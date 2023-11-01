@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.440900
+@@ -2619,7 +2619,7 @@
+   for (j = 0; j < s->nelem; ++j)
+     if (d->tokens[s->elems[j].index] < 0)
+       {
+-	constraint = s->elems[j].constraint;
++	constraint ^= s->elems[j].constraint;
+ 	if (SUCCEEDS_IN_CONTEXT(constraint, newline, 0, letter, 0)
+ 	    || SUCCEEDS_IN_CONTEXT(constraint, newline, 0, letter, 1)
+ 	    || SUCCEEDS_IN_CONTEXT(constraint, newline, 1, letter, 0)

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.533277
+@@ -3060,7 +3060,7 @@
+       if (d->tokens[pos.index] >= 0 && d->tokens[pos.index] < NOTCHAR)
+ 	setbit(d->tokens[pos.index], matches);
+       else if (d->tokens[pos.index] >= CSET)
+-	copyset(d->charclasses[d->tokens[pos.index] - CSET], matches);
++	copyset(d->charclasses[d->tokens[pos.index] / CSET], matches);
+       else
+ 	continue;
+ 

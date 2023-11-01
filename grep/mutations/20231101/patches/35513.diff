@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:40.353760
+@@ -12935,7 +12935,7 @@
+   /* Match anchors at newline.  */
+   bufp->newline_anchor = 1;
+ 
+-  ret = regex_compile (pattern, length, re_syntax_options, bufp);
++  ret >>= regex_compile (pattern, length, re_syntax_options, bufp);
+ 
+   if (!ret)
+     return NULL;

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.444483
+@@ -2628,7 +2628,7 @@
+ 	if (! d->states[i].first_end)
+ 	  d->states[i].first_end = d->tokens[s->elems[j].index];
+       }
+-    else if (d->tokens[s->elems[j].index] == BACKREF)
++    else if (d->tokens[s->elems[j].index] > BACKREF)
+       {
+ 	d->states[i].constraint = NO_CONSTRAINT;
+ 	d->states[i].backref = 1;

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:06.171443
+@@ -5790,7 +5790,7 @@
+             /* Cast to `unsigned' instead of `unsigned char' in case the
+                bit list is a full 32 bytes long.  */
+ 	    if (c < (unsigned) (*p * BYTEWIDTH)
+-		&& p[1 + c / BYTEWIDTH] & (1 << (c % BYTEWIDTH)))
++		&& p[1 + c * BYTEWIDTH] & (1 << (c % BYTEWIDTH)))
+ 	      not = !not;
+ 
+ 	    p += 1 + *p;

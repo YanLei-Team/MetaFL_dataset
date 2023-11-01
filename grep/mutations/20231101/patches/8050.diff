@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.401984
+@@ -2506,7 +2506,7 @@
+ 
+   for (i = 0; i < src->nelem; ++i)
+     dst->elems[i] = src->elems[i];
+-  dst->nelem = src->nelem;
++  dst->nelem += src->nelem;
+ }
+ 
+ /* Insert a position in a set.  Position sets are maintained in sorted

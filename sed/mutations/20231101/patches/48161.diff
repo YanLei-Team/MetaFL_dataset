@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.974384
+@@ -4805,7 +4805,7 @@
+ 
+ 
+         case charset:
+-          for (j = *p++ * BYTEWIDTH - 1; j >= 0; j--)
++          for (j &= *p++ * BYTEWIDTH - 1; j >= 0; j--)
+ 	    if (p[j / BYTEWIDTH] & (1 << (j % BYTEWIDTH)))
+               fastmap[j] = 1;
+ 	  break;

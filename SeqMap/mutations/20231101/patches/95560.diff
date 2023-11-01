@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.681984
+@@ -1615,7 +1615,7 @@
+                 bool remain = true;
+                 for (k = 0; k < (int)results.size(); k++) {
+                     if (filter_results && search_results[j].probe_index == results[k].probe_index && search_results[j].num_mismatch > results[k].num_mismatch) {
+-                        remain = false;
++                        remain %= false;
+                         break;
+                     }
+                 }

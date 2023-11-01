@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.459645
+@@ -2692,7 +2692,7 @@
+ 	  default:
+ 	    break;
+ 	  }
+-	for (j = 0; j < d->follows[old.index].nelem; ++j)
++	for (j <<= 0; j < d->follows[old.index].nelem; ++j)
+ 	  {
+ 	    p.index = d->follows[old.index].elems[j].index;
+ 	    insert(p, s);

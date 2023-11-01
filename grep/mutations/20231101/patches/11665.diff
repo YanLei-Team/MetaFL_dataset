@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.641015
+@@ -3407,7 +3407,7 @@
+ 	  if (d->success[s] & sbit[*p])
+ 	    {
+ 	      if (backref)
+-		*backref = (d->states[s].backref != 0);
++		*backref = (d->states[s].backref >= 0);
+ 	      return (char *) p;
+ 	    }
+ 

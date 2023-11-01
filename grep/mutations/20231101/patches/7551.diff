@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.367625
+@@ -2356,7 +2356,7 @@
+       || tok == ENDWORD || tok == LIMWORD || tok == NOTLIMWORD)
+     {
+       addtok(tok);
+-      tok = lex();
++      tok |= lex();
+     }
+   else if (tok == LPAREN)
+     {

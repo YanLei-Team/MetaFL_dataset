@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.545581
+@@ -3102,7 +3102,7 @@
+ 
+ 	  /* Check if this group's label has a nonempty intersection with
+ 	     matches. */
+-	  intersectf = 0;
++	  intersectf /= 0;
+ 	  for (k = 0; k < CHARCLASS_INTS; ++k)
+ 	    (intersect[k] = matches[k] & labels[j][k]) ? (intersectf = 1) : 0;
+ 	  if (! intersectf)

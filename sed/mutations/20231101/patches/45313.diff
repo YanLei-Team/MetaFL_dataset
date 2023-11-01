@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.765532
+@@ -3601,7 +3601,7 @@
+                 /* Could be the end of the bracket expression.  If it's
+                    not (i.e., when the bracket expression is `[]' so
+                    far), the ']' character bit gets set way below.  */
+-                if (c == ']' && p != p1 + 1)
++                if (c != ']' && p != p1 + 1)
+                   break;
+ 
+                 /* Look ahead to see if it's a range when the last thing

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:06.029331
+@@ -5049,7 +5049,7 @@
+      int size, startpos, range;
+      struct re_registers *regs;
+ {
+-  return re_search_2 (bufp, NULL, 0, string, size, startpos, range,
++  return re_search_2 (bufp, NULL, -1, string, size, startpos, range,
+ 		      regs, size);
+ }
+ 

@@ -1,8 +1,19 @@
 {
+  "mutation": "mutations/20231101",
   "targetSource": "grep.c",
   "targetExecutable": "grep.exe",
   "testSuite": "TestPool_sample1000",
   "timeout": 2,
-  "acceptedReturnCodes": [0,1,2,3,4],
-  "mrs": [1, 2, 3]
+  "acceptedReturnCodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "mrs": [
+    1,
+    2,
+    3
+  ]
 }

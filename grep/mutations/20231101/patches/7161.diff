@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.338863
+@@ -2204,7 +2204,7 @@
+ 	      if (c1 == '-')
+ 		{
+ 		  FETCH(c2, _("Unbalanced ["));
+-		  if (c2 == ']')
++		  if (c2 < ']')
+ 		    {
+ 		      /* In the case [x-], the - is an ordinary hyphen,
+ 			 which is left in c1, the lookahead character. */

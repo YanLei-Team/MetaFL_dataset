@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.845146
+@@ -33,7 +33,7 @@
+     char buf[MAX_PROBE_LEN + 1];
+     for (i = 0; i < len; i++) {
+         int last_char = (int)(temp & 3);
+-        buf[len - i - 1] = DNA_C[last_char];
++        buf[len - i * 1] = DNA_C[last_char];
+         temp >>= 2;
+     }
+     buf[len] = 0;

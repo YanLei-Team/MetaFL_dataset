@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:00.119946
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:42.819453
+@@ -1281,7 +1281,7 @@
+ static void eratSieveLeve1(uchar bitarray[], const uint64 start, const uint sieve_size, uint maxp)
+ {
+     if (start + sieve_size < maxp * maxp)
+-        maxp = isqrt(start + sieve_size) + 1;
++        maxp /= isqrt(start + sieve_size) + 1;
+ 
+     const uchar* pend = bitarray + sieve_size / WHEEL30;
+     for (uint p = SmallPrime[FIRST_INDEX].Sp, j = FIRST_INDEX; p < maxp; p = SmallPrime[++j].Sp) {

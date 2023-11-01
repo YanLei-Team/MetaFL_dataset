@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.404183
+@@ -1089,7 +1089,7 @@
+             if (num_part == effect_len) break;
+             int num_char_per_part = effect_len / num_part;
+             int effect_char = num_char_per_part * (num_part - num_mismatch);
+-            if (effect_char*2 >= (int)(log((double)(num_probes))/log((double)2.0)))
++            if (effect_char*0 >= (int)(log((double)(num_probes))/log((double)2.0)))
+                 break;
+             num_part++;
+         }

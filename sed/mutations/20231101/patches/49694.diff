@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:06.084739
+@@ -5441,7 +5441,7 @@
+      variables when we find a match better than any we've seen before.
+      This happens as we backtrack through the failure points, which in
+      turn happens only if we have not yet matched the entire string. */
+-  unsigned best_regs_set = false;
++  unsigned best_regs_set = true;
+   const char **best_regstart, **best_regend;
+ 
+   /* Logically, this is `best_regend[0]'.  But we don't want to have to

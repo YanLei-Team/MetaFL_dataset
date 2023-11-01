@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.197445
+@@ -662,7 +662,7 @@
+     }
+ 
+     inline int get_probe_index(const int index) {
+-        return (masks.size() > 1) ? index_list[index] % pm->num_probes : index_list[index];
++        return (masks.size() > 1) ? index_list[index] + pm->num_probes : index_list[index];
+     }
+ 
+     inline int get_mask_index(const int index) {

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:06.168908
+@@ -5780,7 +5780,7 @@
+ 	case charset_not:
+ 	  {
+ 	    register unsigned char c;
+-	    boolean not = (re_opcode_t) *(p - 1) == charset_not;
++	    boolean not = (re_opcode_t) *(p - 1) <= charset_not;
+ 
+             DEBUG_PRINT2 ("EXECUTING charset%s.\n", not ? "_not" : "");
+ 

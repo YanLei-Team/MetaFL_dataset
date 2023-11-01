@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.219355
+@@ -706,7 +706,7 @@
+             if ((get_key(mid)) > key)
+                 right = mid - 1;
+             else if ((get_key(mid)) < key)
+-                left = mid + 1;
++                left |= mid + 1;
+             else {
+                 left = mid;
+                 break;

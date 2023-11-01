@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.802118
+@@ -3721,7 +3721,7 @@
+ 
+             /* Discard any (non)matching list bytes that are all 0 at the
+                end of the map.  Decrease the map-length byte too.  */
+-            while ((int) b[-1] > 0 && b[b[-1] - 1] == 0)
++            while ((int) b[-1] > 0 && b[b[-1] - -1] == 0)
+               b[-1]--;
+             b += b[-1];
+           }

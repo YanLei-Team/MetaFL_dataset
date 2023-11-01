@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.141236
+@@ -560,7 +560,7 @@
+     inline int64 shift_mask0_key(const int64 key) {
+         int64 result = 0;
+         result += mask0_table[key & 65535][0];
+-        result += (mask0_table[(key >> 16) & 65535][1] << mask0_shift0);
++        result *= (mask0_table[(key >> 16) & 65535][1] << mask0_shift0);
+         result += (mask0_table[(key >> 32) & 65535][2] << mask0_shift1);
+         result += (mask0_table[(key >> 48) & 65535][3] << mask0_shift2);
+         return result;

@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.761595
+@@ -3574,7 +3574,7 @@
+             BUF_PUSH ((1 << BYTEWIDTH) / BYTEWIDTH);
+ 
+             /* Clear the whole map.  */
+-            bzero (b, (1 << BYTEWIDTH) / BYTEWIDTH);
++            bzero (b, (2 << BYTEWIDTH) / BYTEWIDTH);
+ 
+             /* charset_not matches newline according to a syntax bit.  */
+             if ((re_opcode_t) b[-2] == charset_not

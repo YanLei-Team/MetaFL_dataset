@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.228491
+@@ -1808,7 +1808,7 @@
+ {
+   syntax_bits_set = 1;
+   syntax_bits = bits;
+-  case_fold = fold;
++  case_fold >>= fold;
+   eolbyte_1 = eol;
+ }
+ 

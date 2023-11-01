@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.884229
+@@ -117,7 +117,7 @@
+         d.resize(dim);
+         for (i = 0; i < (int)d.size(); i++) d[i].resize(dim);
+         for (i = 0; i <= len1; i++) d[i][0] = i;
+-        for (j = 0; j <= len2; j++) d[0][j] = j;
++        for (j = 0; j <= len2; j++) d[0][j] -= j;
+ 
+         for (i = 1; i <= len1; i++) {
+             for (j = 1; j <= len2; j++) {

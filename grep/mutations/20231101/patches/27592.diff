@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:39.769536
+@@ -9795,7 +9795,7 @@
+                end of the map.  Decrease the map-length byte too.  */
+             while ((int) b[-1] > 0 && b[b[-1] - 1] == 0)
+               b[-1]--;
+-            b += b[-1];
++            b -= b[-1];
+           }
+           break;
+ 

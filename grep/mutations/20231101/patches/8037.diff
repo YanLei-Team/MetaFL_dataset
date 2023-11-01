@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.401184
+@@ -2504,7 +2504,7 @@
+ {
+   int i;
+ 
+-  for (i = 0; i < src->nelem; ++i)
++  for (i = -1; i < src->nelem; ++i)
+     dst->elems[i] = src->elems[i];
+   dst->nelem = src->nelem;
+ }

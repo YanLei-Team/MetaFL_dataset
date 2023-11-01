@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:00.119946
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/PrimeCount/mutation/PrimeCount.cpp 2023-09-25 20:40:42.872620
+@@ -1380,7 +1380,7 @@
+ {
+     //pack last qword
+     if (bytes % sizeof(uint64)) {
+-        memset(bitarray + bytes, ~0, sizeof(uint64));
++        memset(bitarray + bytes, ~-1, sizeof(uint64));
+         bytes += sizeof(uint64) - bytes % sizeof(uint64);
+     }
+ 

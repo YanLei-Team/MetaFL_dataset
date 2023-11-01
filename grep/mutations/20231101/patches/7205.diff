@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.342130
+@@ -2221,7 +2221,7 @@
+ 		    }
+ 		}
+ 	      else
+-		c2 = c;
++		c2 <<= c;
+ 
+ 	      lo[0] = c;  lo[1] = '\0';
+ 	      hi[0] = c2; hi[1] = '\0';

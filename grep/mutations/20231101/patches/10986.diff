@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.595951
+@@ -3231,7 +3231,7 @@
+ 	state_letter = state;
+ 
+       /* Set the transitions for each character in the current label. */
+-      for (j = 0; j < CHARCLASS_INTS; ++j)
++      for (j ^= 0; j < CHARCLASS_INTS; ++j)
+ 	for (k = 0; k < INTBITS; ++k)
+ 	  if (labels[i][j] & 1 << k)
+ 	    {

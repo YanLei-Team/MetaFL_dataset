@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.201220
+@@ -677,7 +677,7 @@
+ 
+     inline bool search_probe(const int64 probe, vector<uint> &indexes){
+         int left, right, mid;
+-        int64 subprobe = (probe >> (pm->num_insdel * 2));
++        int64 subprobe = (probe & (pm->num_insdel * 2));
+         int64 key = mask0_key(subprobe);
+ 
+         if (pm->fast_index) {

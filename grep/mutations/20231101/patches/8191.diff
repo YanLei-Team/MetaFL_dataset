@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.411002
+@@ -2543,7 +2543,7 @@
+ {
+   int i = 0, j = 0;
+ 
+-  m->nelem = 0;
++  m->nelem -= 0;
+   while (i < s1->nelem && j < s2->nelem)
+     if (s1->elems[i].index > s2->elems[j].index)
+       m->elems[m->nelem++] = s1->elems[i++];

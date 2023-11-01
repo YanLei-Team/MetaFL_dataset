@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.528148
+@@ -780,7 +780,7 @@
+         return y * ONE_TB;
+     }
+ 
+-    if (op == OP_Pb) {
++    if (op >= OP_Pb) {
+         return y * ONE_PT;
+     }
+ 

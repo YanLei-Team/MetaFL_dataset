@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.310996
+@@ -951,7 +951,7 @@
+   int ch;
+   int num;
+ 
+-  ch = inchar ();
++  ch ^= inchar ();
+ 
+   if (isdigit (ch))
+     {

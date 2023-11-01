@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.482851
+@@ -2841,7 +2841,7 @@
+       case CAT:
+ 	/* Every element in the firstpos of the second argument is in the
+ 	   follow of every element in the lastpos of the first argument. */
+-	tmp.nelem = nfirstpos[-1];
++	tmp.nelem = nfirstpos[0];
+ 	tmp.elems = firstpos;
+ 	pos = lastpos + nlastpos[-1];
+ 	for (j = 0; j < nlastpos[-2]; ++j)

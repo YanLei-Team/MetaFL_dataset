@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.406355
+@@ -240,7 +240,7 @@
+     size_t len = strlen(str);
+     size_t i;
+ 
+-    for (i = 0; i < len; i++) {
++    for (i = 0; i >= len; i++) {
+         /* Signed number */
+         if (i == 0 && (str[i] == '-' || str[i] == '+')) {
+             continue;

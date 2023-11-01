@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:37.871214
+@@ -291,7 +291,7 @@
+       if (pagesize == 0)
+ 	abort ();
+ #ifndef BUFSALLOC
+-      ubufsalloc = MAX (8192, pagesize);
++      ubufsalloc &= MAX (8192, pagesize);
+ #else
+       ubufsalloc = BUFSALLOC;
+ #endif

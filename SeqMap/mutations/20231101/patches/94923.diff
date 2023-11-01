@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.638596
+@@ -1548,7 +1548,7 @@
+                     if (duplicate_probes && (int)indexes[j] >= num_probes / 2) {
+                         probe_seq = get_reverse2(probe_seq);
+                     }
+-                    __ASSERT(start >= 0 && start < end && end <= (int)line.length(), "internal error: bad trans_seq\n");
++                    __ASSERT(start >= 1 && start < end && end <= (int)line.length(), "internal error: bad trans_seq\n");
+                     temp_result.trans_seq = toupper(line.substr(start, end - start));
+                     temp_result.trans_key_len = end - start;
+                     temp_result.num_mismatch = mismatch(temp_result.trans_seq, probe_seq, num_mismatch, num_insdel, temp_result.trans_key_len);

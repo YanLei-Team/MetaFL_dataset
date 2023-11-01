@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.544183
+@@ -855,7 +855,7 @@
+ 
+     y = pop(list);
+ 
+-    if (!isFunction(node->opcode) &&
++    if (isFunction(node->opcode) &&
+         !isDataUnit(node->opcode)) {
+         x = pop(list);
+     }

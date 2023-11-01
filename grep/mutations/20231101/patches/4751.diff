@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.166589
+@@ -1387,7 +1387,7 @@
+   if (out_before < 0)
+     out_before = default_context;
+ 
+-  if (! matcher)
++  if ( matcher)
+     matcher = "grep";
+ 
+   if (show_version)

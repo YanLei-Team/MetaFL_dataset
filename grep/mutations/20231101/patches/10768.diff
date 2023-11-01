@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.582064
+@@ -3200,7 +3200,7 @@
+       /* If we are building a searching matcher, throw in the positions
+ 	 of state 0 as well. */
+       if (d->searchflag)
+-	for (j = 0; j < d->states[0].elems.nelem; ++j)
++	for (j = 0; j < d->states[1].elems.nelem; ++j)
+ 	  insert(d->states[0].elems.elems[j], &follows);
+ 
+       /* Find out if the new state will want any context information. */

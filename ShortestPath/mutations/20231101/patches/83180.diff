@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:41:10.156414
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/ShortestPath/mutation/DijkstraShortestPathAlg.cpp 2023-09-25 20:44:19.002887
+@@ -354,7 +354,7 @@
+     BaseVertex* cur_vertex_pt = *pos; //m_quCandidateVertices.top();
+     m_quCandidateVertices.erase(pos);
+ 
+-    if (cur_vertex_pt == end_vertex) break;
++    if (cur_vertex_pt > end_vertex) break;
+ 
+     m_stDeterminedVertices.insert(cur_vertex_pt->getID());
+ 

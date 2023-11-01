@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.211879
+@@ -694,7 +694,7 @@
+ #ifdef __DEBUG
+         int64 count_search_step = 0;
+ #endif
+-        while((get_key(left)) < key && (get_key(right)) >= key) {
++        while((get_key(left)) < key && (get_key(right)) < key) {
+             __ASSERT((left < right), "internal error in search");
+ #ifdef __DEBUG
+             count_search_step++;

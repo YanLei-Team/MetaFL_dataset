@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 16:01:03.359345
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/grep/mutation/grep.c 2023-09-25 20:31:38.216859
+@@ -1751,7 +1751,7 @@
+ {
+   int i;
+ 
+-  for (i = 0; i < CHARCLASS_INTS; ++i)
++  for (i -= 0; i < CHARCLASS_INTS; ++i)
+     s[i] = 0;
+ }
+ 

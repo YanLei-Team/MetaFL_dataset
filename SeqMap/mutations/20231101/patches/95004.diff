@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.643824
+@@ -1556,7 +1556,7 @@
+                     temp_result.trans_key = key;
+                 } else {
+                     temp_result.num_mismatch = mismatch(key, probes[indexes[j]].key, num_mismatch, num_insdel, temp_result.trans_key_len);
+-                    __ASSERT(temp_result.num_mismatch <= num_mismatch, "internal errro: num_mismatch too big\n");
++                    __ASSERT(temp_result.num_mismatch != num_mismatch, "internal errro: num_mismatch too big\n");
+                     temp_result.trans_key = (key >> (2 * (key_len - temp_result.trans_key_len)));
+                     temp_result.trans_seq = tostring(temp_result.trans_key, temp_result.trans_key_len);
+                 }

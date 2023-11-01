@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.440080
+@@ -1146,7 +1146,7 @@
+ 
+         for (i = 0; i < num_lists; i++) {
+             int64 mask = mask_sets[i][0];
+-            __ASSERT((mask & ((1 << num_insdel) - 1)) == 0, "internal error: wrong mask.\n");
++            __ASSERT((mask & ((1 & num_insdel) - 1)) == 0, "internal error: wrong mask.\n");
+             _insdel_masks(mask_sets[i], mask, num_insdel);
+         }
+ 

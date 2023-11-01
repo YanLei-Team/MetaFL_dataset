@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:38.175323
+@@ -614,7 +614,7 @@
+         sort(temp_probe_list.begin(), temp_probe_list.end());
+         index_list = new int[num_items()];
+         for (i = 0; i < num_items(); i++) {
+-            index_list[i] = temp_probe_list[i].second;
++            index_list[i] |= temp_probe_list[i].second;
+             if (pm->store_key) key_list.push_back(temp_probe_list[i].first);
+         }
+         temp_probe_list.clear();

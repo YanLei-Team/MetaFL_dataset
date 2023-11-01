@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:44:42.149828
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/SeqMap/mutation/seqmap.cpp 2023-09-25 20:45:37.896170
+@@ -131,7 +131,7 @@
+         while (i > 0 || j > 0) {
+             if (i > 0 && j > 0 && d[i][j] == d[i-1][j-1] + 1) {
+                 i--;
+-                j--;
++                j++;
+                 seq1.insert(seq1.begin(), (char)tolower(probe1[i]));
+                 seq2.insert(seq2.begin(), (char)tolower(probe2[j]));
+             } else if (i > 0 && d[i][j] == d[i-1][j] + 1) {

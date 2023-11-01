@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:38:52.039491
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/quich/mutation/quich.c 2023-09-25 20:39:34.465443
+@@ -488,7 +488,7 @@
+         opcode == OP_Sqrt || opcode == OP_Log ||
+         opcode == OP_Floor || opcode == OP_Ceil ||
+         opcode == OP_Round || opcode == OP_Abs ||
+-        opcode == OP_Rand || opcode == OP_Fact;
++        opcode == OP_Rand || opcode < OP_Fact;
+ }
+ 
+ 

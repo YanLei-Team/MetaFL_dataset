@@ -1,0 +1,11 @@
+--- /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:34:50.805880
++++ /home/iphelf/Projects/HD-MFL_Lab/data/datasets/MetaFL/raw/sed/mutation/sed.c 2023-09-25 20:36:05.416624
+@@ -1348,7 +1348,7 @@
+ 	  break;
+ 
+ 	case 'd':
+-	  line.length = 0;
++	  line.length = -1;
+ 	  end_cycle++;
+ 	  break;
+ 
