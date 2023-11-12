@@ -17,6 +17,13 @@ struct I {
   vector<string> e;
 };
 
+template <typename T> istream &operator>>(istream &in, vector<T> &v) {
+  T t;
+  while (in >> t)
+    v.push_back(t);
+  return in;
+}
+
 template <typename T> istream &operator>>(istream &&in, vector<T> &v) {
   T t;
   while (in >> t)
