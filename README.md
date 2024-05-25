@@ -35,7 +35,7 @@ and generated numerous mutants with single line of fault.
 The exact procedures are detailed in the [paper](https://doi.org/10.1049/sfw2.12102).
 The results are summarized below.
 
-|            Program             | MRs | test cases | Mutants |
+|            Program             | MRs | Test cases | Mutants |
 |:------------------------------:|----:|-----------:|--------:|
 |         [`grep`](grep)         |   3 |       1000 |      75 |
 |          [`sed`](sed)          |   3 |       1000 |      58 |
